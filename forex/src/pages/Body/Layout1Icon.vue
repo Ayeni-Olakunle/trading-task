@@ -3,7 +3,7 @@
     <div style="line-height: 1">
       <q-icon
         :name="icon"
-        style="font-size: 26px; margin: 5px 0px; color: gray"
+        style="font-size: 26px; margin: 5px 0px; color: #b5b5b5"
       /><br />
       <span class="icontext">{{ iconName }}</span>
     </div>
@@ -75,6 +75,6 @@ export default defineComponent({
 
 .icontext {
   font-size: 12px;
-  color: gray;
+  color: #b5b5b5;
 }
 </style>
