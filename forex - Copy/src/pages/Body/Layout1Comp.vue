@@ -1,21 +1,15 @@
 <template>
   <div style="display: flex">
     <div>
-      <Layout1Icon icon="fa fa-briefcase" iconName="TOTAL PORTFOLIO" />
-      <Layout1Icon icon="fa fa-clock-o" iconName="TRACING HISTORY" />
-      <!-- <Layout1Icon
-        icon="fa fa-gavel"
-        iconName="ORDER BOOK"
-        iconName2="ORDER BOOK"
-      /> -->
-      <Layout1Icon icon="fa fa-comments" iconName="CHART & SUPPORT" />
+      <Layout1Icon icon="fa fa-cog" iconName="ADMIN" />
+      <Layout1Icon icon="fa fa-pie-chart" iconName="MANAGER" />
+      <Layout1Icon icon="fa fa-gavel" iconName="ORDER BOOK" />
+      <Layout1Icon icon="fa fa-bar-chart" iconName="BOARD" />
+      <Layout1Icon icon="fa fa-newspaper-o" iconName="FINANCES" />
+      <Layout1Icon icon="fa fa-heartbeat" iconName="MARKET" />
+      <Layout1Icon icon="fa fa-calculator" iconName="CALC" />
+      <Layout1Icon icon="fa fa-users" iconName="AUTO COPY TRADER" />
       <Layout1Icon icon="fa fa-list-alt" iconName="LEADER BOARD" />
-      <!-- <Layout1Icon icon="fa fa-heartbeat" iconName="MARKET" /> -->
-      <Layout1Icon icon="fa fa-newspaper-o" iconName="MARKET ANALYSIS" />
-      <!-- <Layout1Icon icon="fa fa-calculator" iconName="CALC" /> -->
-      <!-- <Layout1Icon icon="fa fa-users" iconName="AUTO COPY TRADER" /> -->
-      <Layout1Icon icon="fa fa-play-circle-o" iconName="VIDEO TUTORIALS" />
-      <Layout1Icon icon="fa fa-ellipsis-h" iconName="MORE" />
     </div>
     <div style="width: 100%">
       <div class="whishList">

@@ -1,13 +1,8 @@
 <template>
   <div class="holdIcon" @click="alert = true" label="Alert" color="primary">
-    <div style="line-height: 1">
-      <q-icon
-        :name="icon"
-        style="font-size: 26px; margin: 5px 0px; color: gray"
-      /><br />
-      <span class="icontext">{{ iconName }}</span
-      ><br />
-      <span class="icontext">{{ iconName2 }}</span>
+    <div>
+      <q-icon :name="icon" style="font-size: 23px; margin: 10px 0" /><br />
+      <span style="font-size: 12px">{{ iconName }}</span>
     </div>
   </div>
   <q-dialog v-model="alert">
@@ -44,10 +39,6 @@ export default defineComponent({
       type: String,
       default: "",
     },
-    iconName2: {
-      type: String,
-      default: "",
-    },
   },
   setup() {
     return {
@@ -59,8 +50,9 @@ export default defineComponent({
 
 <style scoped>
 .holdIcon {
+  width: 90px;
   background-color: #1c154a;
-  height: 85px;
+  height: 75px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -68,6 +60,7 @@ export default defineComponent({
   text-align: center;
 }
 .holdIcon:hover {
+  width: 90px;
   background-color: #322d51;
   cursor: pointer;
   transition: 0.5s;
@@ -77,10 +70,5 @@ export default defineComponent({
   width: 100%;
   background-color: #322d51;
   height: fit-content;
-}
-
-.icontext {
-  font-size: 12px;
-  color: gray;
 }
 </style>
