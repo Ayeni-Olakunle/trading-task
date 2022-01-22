@@ -5,9 +5,7 @@
         :name="icon"
         style="font-size: 26px; margin: 5px 0px; color: gray"
       /><br />
-      <span class="icontext">{{ iconName }}</span
-      ><br />
-      <span class="icontext">{{ iconName2 }}</span>
+      <span class="icontext">{{ iconName }}</span>
     </div>
   </div>
   <q-dialog v-model="alert">
@@ -41,10 +39,6 @@ export default defineComponent({
       default: "",
     },
     iconName: {
-      type: String,
-      default: "",
-    },
-    iconName2: {
       type: String,
       default: "",
     },
