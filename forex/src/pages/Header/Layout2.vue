@@ -1,5 +1,8 @@
 <template>
-  <div class="q-pa-md Flex row justify-end .self-center">
+  <div
+    class="q-pa-md Flex row justify-end .self-center"
+    style="padding: 5px 16px"
+  >
     <div class="HoldPro">
       <i class="fa fa-bell" style="font-size: 15px"></i>
       <div class="imagePro"></div>

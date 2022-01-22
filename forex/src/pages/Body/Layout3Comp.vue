@@ -1,35 +1,55 @@
 <template>
-  <div class="holdAmont">
+  <div>
     <div class="amount">
-      <p style="margin: 0">Amount</p>
+      <div style="display: flex; justify-content: space-between">
+        <p style="margin: 0">Amount</p>
+        <i class="fa fa-question-circle"></i>
+      </div>
       <p id="amont" style="margin: 0">${{ counts }}</p>
     </div>
     <div class="holdPlus">
-      <div class="plus" style="margin-bottom: 4px" @click="incrementCounter">
-        +
-      </div>
       <div class="plus" @click="decreseCounter">-</div>
+      <div class="plus" @click="incrementCounter">+</div>
     </div>
   </div>
 
-  <div class="holdAmont">
+  <div>
     <div class="amount">
-      <p style="margin: 0">Expiration</p>
-      <p id="amont" style="margin: 0">21:00</p>
-    </div>
-    <div class="holdPlus">
-      <div class="plus" style="margin-bottom: 4px">+</div>
-      <div class="plus">-</div>
+      <div style="display: flex; justify-content: space-between">
+        <p style="margin: 0">Multiplier</p>
+        <i class="fa fa-question-circle"></i>
+      </div>
+      <p id="amont" style="margin: 0">X 20</p>
     </div>
   </div>
 
   <div class="holdAmont">
+    <div class="holdProfit">
+      <p style="font-size: 14px; margin: 0; color: #9189c1">
+        Volume <i class="fa fa-question-circle"></i>
+      </p>
+      <p style="font-size: 22px; margin-bottom: 5px">$2k</p>
+      <p style="font-size: 14px; margin: 0; color: #9189c1">
+        Piont Value <i class="fa fa-question-circle"></i>
+      </p>
+      <p style="font-size: 22px; margin: 0">5.01k</p>
+    </div>
+  </div>
+
+  <!-- <div class="holdAmont">
     <div class="holdProfit">
       <p style="font-size: 14px; margin: 0">Profit</p>
       <p style="font-size: 32px; color: #20d638; margin: 0">+80%</p>
       <p style="margin: 0; font-size: 15px; color: #20d638; font-weight: 700">
         +$0.80
       </p>
+    </div>
+  </div> -->
+
+  <div>
+    <div class="amount" style="margin-bottom: 5px">
+      <p style="margin: 0">Auto Complete</p>
+      <p id="amont" style="margin: 0">-</p>
     </div>
   </div>
 
@@ -70,6 +90,15 @@
     </div>
   </div>
 
+  <div style="display: flex; justify-content: space-between; padding: 5px">
+    <p style="margin: 0">Spread</p>
+    <p style="margin: 0">0.007</p>
+  </div>
+
+  <button style="background-color: #2b226c; border: none; color: white">
+    Purchase at...
+  </button>
+
   <!-- <div class="holdAmont">
     <p style="margin: 0">AutoCopy <br />Trader</p>
   </div>
@@ -99,10 +128,10 @@ export default defineComponent({
   },
   methods: {
     incrementCounter: function () {
-      this.counts++;
+      this.counts += 100;
     },
     decreseCounter: function () {
-      this.counts--;
+      this.counts -= 100;
     },
   },
 });
@@ -111,10 +140,11 @@ export default defineComponent({
 <style scoped>
 .amount {
   background-color: #1c154a;
-  width: 80%;
+  width: 100%;
   padding: 10px;
   font-size: 12px;
-  border-radius: 3px;
+  border-radius: 2px;
+  margin-bottom: 3px;
 }
 .amountBuy {
   width: 100%;
@@ -145,33 +175,30 @@ export default defineComponent({
 }
 
 .plus {
-  width: 100%;
+  width: 49%;
   background-color: #1c154a;
-  padding: 1px;
   display: flex;
   justify-content: center;
   align-items: center;
   cursor: pointer;
-  border-radius: 4px;
+  border-radius: 2px;
 }
 
 .holdPlus {
   display: flex;
   justify-content: space-between;
-  flex-direction: column;
-  width: 20%;
-  margin-left: 3px;
+  width: 100%;
+  margin-bottom: 4px;
 }
 .holdAmont {
   display: flex;
   justify-content: center;
   font-size: 15px;
-  margin: 0;
   margin-bottom: 5px;
+  padding: 0 5px;
 }
 
 .holdProfit {
-  text-align: center;
   width: 100%;
   line-height: 1.3;
   margin: 10px 0;

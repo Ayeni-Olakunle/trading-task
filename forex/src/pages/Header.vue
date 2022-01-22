@@ -1,6 +1,6 @@
 <template>
   <div class="q-pa-md headerBack">
-    <div class="row">
+    <div class="row" style="padding: 5px 0px">
       <div class="col-7">
         <Layout1 />
       </div>

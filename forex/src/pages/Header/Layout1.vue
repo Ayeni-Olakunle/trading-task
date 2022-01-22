@@ -1,6 +1,6 @@
 <template>
   <div>
-    <div class="row" style="padding: 16px 0">
+    <div class="row" style="padding: 5px 0">
       <div
         class="col-2"
         style="
@@ -50,9 +50,10 @@ export default defineComponent({
   justify-content: center;
   align-items: center;
   border: 2px solid #322d51;
-  padding: 0 20px;
+  padding: 0 10px;
   border-radius: 4px;
   cursor: pointer;
+  height: 50px;
 }
 
 .IQ {
