@@ -17,8 +17,8 @@ import { defineComponent } from "vue";
 
 import TradingVue from "trading-vue-js";
 import { DataCubes } from "trading-vue-js";
-import Data from "./data.json";
-import TestOverlay from "./TestOverlay.vue";
+// import Data from "./data.json";
+// import TestOverlay from "../TestOverlay.vue";
 
 export default defineComponent({
   name: "Layout1",

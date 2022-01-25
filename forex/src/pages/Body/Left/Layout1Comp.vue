@@ -34,7 +34,7 @@
             <span>Portfolio</span>
             <div>
               <i class="fa fa-window-maximize" style="margin-right: 10px"></i>
-              <i class="fa fa-close"></i>
+              <i class="fa fa-close" @click="close"></i>
             </div>
           </div>
 
@@ -45,19 +45,18 @@
             <div class="pde">Pending</div>
           </div>
 
-          <div
-            class="q-pa-md"
-            style="max-width: 278px; padding: 10px 0; margin-top: 20px"
-          >
-            <div class="q-gutter-md">
-              <q-select
-                style="background-color: #322d51"
-                filled
-                v-model="model"
-                :options="options"
-                label="All Positions"
-              />
-            </div>
+          <div style="padding: 20px 0;">
+            <select name="" id="" class="select">
+              <option value="" >All Positions</option>
+              <option value="">Binary Option</option>
+              <option value="">Digital Option</option>
+              <option value="">Forex</option>
+              <option value="">Stocks</option>
+              <option value="">Cryptocurrency</option>
+              <option value="">Commodities</option>
+              <option value="">ETFs</option>
+              <option value="">Indices</option>
+            </select>
           </div>
 
           <div style="margin-top: 150px; text-align: center">
@@ -70,28 +69,8 @@
               position yet
             </div>
           </div>
-          <!-- <table class="symbol">
-            <thead>
-              <tr>
-                <td>Symbol</td>
-                <td>Last</td>
-                <td>Chng(%)</td>
-              </tr>
-            </thead>
-            <tbody>
-              <tr></tr>
-            </tbody>
-          </table> -->
         </div>
       </div>
-      <!-- <div>
-        <div class="holdDetails">
-          <input type="text" placeholder="DETAILS" class="inputMe" />
-        </div>
-        <div style="margin: 5px">
-          <div class="progress"></div>
-        </div>
-      </div> -->
     </div>
   </div>
 </template>
@@ -99,7 +78,7 @@
 <script>
 import { defineComponent } from "vue";
 import { ref } from "vue";
-import Layout1Icon from "pages/Body/Layout1Icon.vue";
+import Layout1Icon from "pages/Body/Left/Layout1Icon.vue";
 
 export default defineComponent({
   name: "Layout1Comp",
@@ -112,6 +91,12 @@ export default defineComponent({
       options: ["Google", "Facebook", "Twitter", "Apple", "Oracle"],
     };
   },
+  methods: {
+    close() {
+      // `this` will refer to the component instance
+      alert("workinf")
+    }
+  }
 });
 </script>
 
@@ -199,5 +184,15 @@ export default defineComponent({
   text-align: center;
   border-bottom: 1px solid transparent;
   cursor: pointer;
+}
+
+.select{
+  width: 100%;
+padding: 9px;
+color: white;
+border: none;
+border-radius: 4px;
+background-color: #322d51;
+font-size: 12px;
 }
 </style>

@@ -3,7 +3,7 @@
     <div style="line-height: 1">
       <q-icon
         :name="icon"
-        style="font-size: 26px; margin: 5px 0px; color: #b5b5b5"
+        class="iconStyle"
       /><br />
       <span class="icontext">{{ iconName }}</span>
     </div>
@@ -61,10 +61,11 @@ export default defineComponent({
   border-bottom: 1px solid gray;
   text-align: center;
 }
-.holdIcon:hover {
-  background-color: #322d51;
+.holdIcon:hover .icontext, .iconStyle{
+  color: white;
+  /* background-color: #322d51;
   cursor: pointer;
-  transition: 0.5s;
+  transition: 0.5s; */
 }
 
 .whishList {
@@ -77,4 +78,16 @@ export default defineComponent({
   font-size: 12px;
   color: #b5b5b5;
 }
+
+.iconStyle{
+  font-size: 26px;
+  margin: 5px 0px;
+  color: #b5b5b5
+}
+/* 
+.iconStyle:hover{
+  color: white;
+} */
+
+
 </style>

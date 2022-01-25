@@ -6,7 +6,7 @@
 
 <script>
 import { defineComponent } from "vue";
-import Layout3Comp from "pages/Body/Layout3Comp.vue";
+import Layout3Comp from "src/pages/Body/Right/Layout3Comp.vue";
 export default defineComponent({
   name: "Layout3",
   components: {

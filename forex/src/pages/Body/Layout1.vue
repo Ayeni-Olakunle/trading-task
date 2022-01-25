@@ -6,7 +6,7 @@
 
 <script>
 import { defineComponent } from "vue";
-import Layout1Comp from "src/pages/Body/Layout1Comp.vue";
+import Layout1Comp from "src/pages/Body/Left/Layout1Comp.vue";
 
 export default defineComponent({
   name: "Layout1",
