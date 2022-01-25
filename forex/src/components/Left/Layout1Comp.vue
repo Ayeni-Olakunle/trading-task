@@ -1,6 +1,6 @@
 <template>
   <div style="display: flex">
-    <div>
+    <div style="border-right: 1px solid #525252; width: 100px;">
       <Layout1Icon icon="fa fa-briefcase" iconName="TOTAL PORTFOLIO" />
       <Layout1Icon icon="fa fa-clock-o" iconName="TRACING HISTORY" />
       <Layout1Icon icon="fa fa-comments" iconName="CHART & SUPPORT" />
@@ -50,9 +50,9 @@
           <div style="margin-top: 150px; text-align: center">
             <i
               class="fa fa-cubes"
-              style="font-size: 70px; color: rgb(64, 55, 125)"
+              style="font-size: 70px; color: #363d50"
             ></i>
-            <div style="font-size: 20px; color: #40377d">
+            <div style="font-size: 20px; color: #363d50">
               You have no open<br />
               position yet
             </div>
@@ -101,7 +101,7 @@ export default defineComponent({
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #020237;
+  background-color: #191f2d;
 }
 
 .BTC {
@@ -113,7 +113,7 @@ export default defineComponent({
 }
 
 .BTCButin {
-  background-color: #2b1f77;
+  background-color: #191f2d;
   border: none;
   color: white;
   padding: 5px 10px;
@@ -125,7 +125,7 @@ export default defineComponent({
   width: 100%;
   text-align: center;
   padding: 10px 0;
-  border-bottom: 1px solid #686868;
+  border-bottom: 1px solid #191f2d;
 }
 
 .holdDetails {
@@ -180,7 +180,7 @@ padding: 9px;
 color: white;
 border: none;
 border-radius: 4px;
-background-color: #322d51;
+background-color: #191f2d;
 font-size: 12px;
 }
 </style>

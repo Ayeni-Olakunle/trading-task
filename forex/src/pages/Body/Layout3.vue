@@ -35,7 +35,7 @@ export default defineComponent({
 .imagePro {
   width: 40px;
   height: 40px;
-  background-color: #333;
+  background-color: #191f2d;
   border-radius: 50px;
   margin: 0 10px;
 }

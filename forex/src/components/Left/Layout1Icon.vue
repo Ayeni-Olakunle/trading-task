@@ -53,12 +53,12 @@ export default defineComponent({
 
 <style scoped>
 .holdIcon {
-  background-color: #1c154a;
+  background-color: #191f2d;
   height: 85px;
   display: flex;
   justify-content: center;
   align-items: center;
-  border-bottom: 1px solid gray;
+  /* border-bottom: 1px solid gray; */
   text-align: center;
 }
 .holdIcon .icontext .iconStyle:hover{

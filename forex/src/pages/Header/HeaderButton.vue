@@ -3,11 +3,12 @@
     <span>{{ title }}</span>
   </div> -->
   <div class="current actO" :class="active == 'true' ? 'act2' : ''">
+    <i class="fa fa-close" style="margin-right: 5px;color: rgb(159, 159, 159);"></i>
     <div class="imageMe"></div>
     <div style="font-size: 12px">
       <span>{{ title }}</span
       ><br />
-      <span>Binary</span>
+      <span style="color: rgb(82, 82, 82)">Binary</span>
     </div>
   </div>
 </template>
@@ -60,8 +61,8 @@ export default defineComponent({
 .current {
   display: flex;
   color: white;
-  border: 2px solid #322d51;
-  padding: 6px 12px;
+  border: 1px solid rgb(82, 82, 82);
+  padding: 5px 8px;
   border-radius: 3px;
   justify-content: center;
   align-content: center;
@@ -72,9 +73,11 @@ export default defineComponent({
 }
 
 .act2 {
-  border-bottom: 2px solid orange;
+  border-bottom: 1px solid orange;
+  background-color: #353c4d;
 }
 .actO:hover {
-  border-bottom: 2px solid orange;
+  border-bottom: 1px solid orange;
+  background-color: #353c4d;
 }
 </style>

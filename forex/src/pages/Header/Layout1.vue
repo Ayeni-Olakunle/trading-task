@@ -1,6 +1,6 @@
 <template>
   <div>
-    <div class="row" style="padding: 5px 0">
+    <div class="row" style="padding: 0px 0">
       <div
         class="col-2"
         style="
@@ -8,20 +8,24 @@
           background-size: contain;
           background-repeat: no-repeat;
           width: fit-content;
-          width: 50px;
+          width: 35px;
           border-radius: 50px;
-          height: 50px;
+          height: 35px;
           margin-right: 10px;
           margin-left: 20px;
           margin-top: 8px;
         "
-      ></div>
+      >
+      </div>
       <div class="IQ">IQ option</div>
       <HeaderButin title="EUR/GBP" active="true" />
       <HeaderButin title="EUR/JPY" active="false" />
       <HeaderButin title="GBP/USD" active="false" />
       <div class="adding">
         <span>+</span>
+      </div>
+      <div>
+        asds
       </div>
       <!-- <HeaderButin title="STOCKS" active="false" />
       <HeaderButin title="COMMODITIES" active="false" />
@@ -44,20 +48,20 @@ export default defineComponent({
 
 <style scoped>
 .adding {
-  color: #322d51;
+  color: rgb(82, 82, 82);
   font-size: 40px;
   display: flex;
   justify-content: center;
   align-items: center;
-  border: 2px solid #322d51;
-  padding: 0 10px;
+  border: 1px solid rgb(82, 82, 82);
+  padding: 0 13px;
   border-radius: 4px;
   cursor: pointer;
   height: 50px;
 }
 
 .IQ {
-  font-size: 30px;
+  font-size: 25px;
   color: #878495;
   display: flex;
   justify-content: center;

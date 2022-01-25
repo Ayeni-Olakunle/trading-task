@@ -33,11 +33,11 @@ export default defineComponent({
 <style scoped>
 .headerBack {
   padding: 0;
-  background-color: #020237;
+  background-color: #191f2d;
 }
 
 .kolo3 {
-  background-color: #020237;
+  background-color: #191f2d;
   color: white;
   height: auto;
   padding: 5px;

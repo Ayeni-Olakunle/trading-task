@@ -14,16 +14,20 @@
   </div>
 
   <div>
-    <div class="amount">
+    <div class="amount" style="background-color: transparent;border: 1.5px solid #363d50;">
       <div style="display: flex; justify-content: space-between">
         <p style="margin: 0">Multiplier</p>
         <i class="fa fa-question-circle"></i>
       </div>
       <p id="amont" style="margin: 0">X 20</p>
     </div>
+    <div class="holdPlus">
+      <div class="plus" @click="decreseCounter">-</div>
+      <div class="plus" @click="incrementCounter">+</div>
+    </div>
   </div>
 
-  <div class="holdAmont">
+  <!-- <div class="holdAmont">
     <div class="holdProfit">
       <p style="font-size: 14px; margin: 0; color: #9189c1">
         Volume <i class="fa fa-question-circle"></i>
@@ -34,17 +38,17 @@
       </p>
       <p style="font-size: 22px; margin: 0">5.01k</p>
     </div>
-  </div>
+  </div> -->
 
-  <!-- <div class="holdAmont">
+  <div class="holdAmont">
     <div class="holdProfit">
-      <p style="font-size: 14px; margin: 0">Profit</p>
+      <p style="font-size: 14px; margin: 0">Profit <i class="fa fa-question-circle"></i></p>
       <p style="font-size: 32px; color: #20d638; margin: 0">+80%</p>
       <p style="margin: 0; font-size: 15px; color: #20d638; font-weight: 700">
         +$0.80
       </p>
     </div>
-  </div> -->
+  </div>
 
   <div>
     <div class="amount" style="margin-bottom: 5px">
@@ -95,9 +99,9 @@
     <p style="margin: 0">0.007</p>
   </div>
 
-  <button style="background-color: #2b226c; border: none; color: white">
+  <!-- <button style="background-color: #363d50; border: none; color: white">
     Purchase at...
-  </button>
+  </button> -->
 
   <!-- <div class="holdAmont">
     <p style="margin: 0">AutoCopy <br />Trader</p>
@@ -139,7 +143,7 @@ export default defineComponent({
 
 <style scoped>
 .amount {
-  background-color: #1c154a;
+  background-color: #363d50;
   width: 100%;
   padding: 10px;
   font-size: 12px;
@@ -148,7 +152,7 @@ export default defineComponent({
 }
 .amountBuy {
   width: 100%;
-  background-color: #20d638;
+  background-color: #2cac40;
   font-size: 15px;
   border-radius: 2px;
   display: flex;
@@ -159,7 +163,7 @@ export default defineComponent({
 }
 .amountSell {
   width: 100%;
-  background-color: #d62620;
+  background-color: #db4931;
   font-size: 15px;
   border-radius: 2px;
   display: flex;
@@ -176,7 +180,7 @@ export default defineComponent({
 
 .plus {
   width: 49%;
-  background-color: #1c154a;
+  background-color: #363d50;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -191,6 +195,7 @@ export default defineComponent({
   margin-bottom: 4px;
 }
 .holdAmont {
+  text-align: center;
   display: flex;
   justify-content: center;
   font-size: 15px;

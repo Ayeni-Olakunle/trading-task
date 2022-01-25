@@ -1,6 +1,6 @@
 <template>
   <div class="q-pa-md headerBack">
-    <div class="row" style="padding: 5px 0px">
+    <div class="row" style="padding: 5px 0px;border-bottom: 1px solid rgb(82, 82, 82);">
       <div class="col-7">
         <Layout1 />
       </div>
@@ -27,6 +27,6 @@ export default defineComponent({
 <style scoped>
 .headerBack {
   padding: 0;
-  background-color: #020237;
+  background-color: #191f2d;
 }
 </style>
