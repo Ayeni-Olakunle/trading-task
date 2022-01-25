@@ -7,7 +7,8 @@
 
 <script>
 import { defineComponent } from "vue";
-import Layout2Graph from "src/pages/Body/Middle/Layout2Graph.vue";
+// import Layout2Graph from "src/pages/Body/Middle/Layout2Graph.vue";
+import Layout2Graph from "src/components/Middle/Layout2Graph.vue";
 
 export default defineComponent({
   name: "Layout1",

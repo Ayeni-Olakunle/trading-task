@@ -3,27 +3,15 @@
     <div>
       <Layout1Icon icon="fa fa-briefcase" iconName="TOTAL PORTFOLIO" />
       <Layout1Icon icon="fa fa-clock-o" iconName="TRACING HISTORY" />
-      <!-- <Layout1Icon
-        icon="fa fa-gavel"
-        iconName="ORDER BOOK"
-        iconName2="ORDER BOOK"
-      /> -->
       <Layout1Icon icon="fa fa-comments" iconName="CHART & SUPPORT" />
-      <Layout1Icon icon="fa fa-list-alt" iconName="LEADER BOARD" />
-      <!-- <Layout1Icon icon="fa fa-heartbeat" iconName="MARKET" /> -->
+      <Layout1Icon icon="fa fa-list-alt" iconName="LEADE BOARD" />
       <Layout1Icon icon="fa fa-newspaper-o" iconName="MARKET ANALYSIS" />
-      <!-- <Layout1Icon icon="fa fa-calculator" iconName="CALC" /> -->
-      <!-- <Layout1Icon icon="fa fa-users" iconName="AUTO COPY TRADER" /> -->
       <Layout1Icon icon="fa fa-play-circle-o" iconName="VIDEO TUTORIALS" />
       <Layout1Icon icon="fa fa-ellipsis-h" iconName="MORE" />
     </div>
     <div style="width: 100%">
       <div class="whishList">
         <div style="height: 200px">
-          <!-- <div class="holdWhisList">
-            <input type="text" placeholder="WATCHLIST" class="BTC" />
-            <button class="BTCButin">BTCETH</button>
-          </div> -->
           <div
             style="
               display: flex;
@@ -78,7 +66,7 @@
 <script>
 import { defineComponent } from "vue";
 import { ref } from "vue";
-import Layout1Icon from "pages/Body/Left/Layout1Icon.vue";
+import Layout1Icon from "./Layout1Icon.vue";
 
 export default defineComponent({
   name: "Layout1Comp",

@@ -61,11 +61,11 @@ export default defineComponent({
   border-bottom: 1px solid gray;
   text-align: center;
 }
-.holdIcon:hover .icontext, .iconStyle{
+.holdIcon .icontext .iconStyle:hover{
   color: white;
-  /* background-color: #322d51;
+  background-color: #322d51;
   cursor: pointer;
-  transition: 0.5s; */
+  transition: 0.5s;
 }
 
 .whishList {
