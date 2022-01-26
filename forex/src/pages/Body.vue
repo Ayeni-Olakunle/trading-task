@@ -6,7 +6,7 @@
     <div class="col-8">
       <Layout2 />
     </div>
-    <div class="col-1 kolo3">
+    <div class="col-1 kolo3" style="padding: 5px;">
       <Layout3 />
     </div>
   </div>
@@ -40,6 +40,5 @@ export default defineComponent({
   background-color: #191f2d;
   color: white;
   height: auto;
-  padding: 5px;
 }
 </style>

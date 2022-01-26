@@ -22,6 +22,65 @@
       ></span>
       <span style="font-size: 11px">PRACTICE ACCOUNT</span>
     </div>
+    <div class="subchild active" >
+      <div class="moneyBox">
+        <h6 class="topText">Practice Account</h6>
+        <div class="holdSub">
+          <span>Available</span>
+          <span>$56,260.2</span>
+        </div>
+        <div class="holdSub" style="color: gray">
+          <span>Invested</span>
+          <span>-</span>
+        </div>
+        <div class="holdSub" style="color: gray">
+          <span>Profit</span>
+          <span>-</span>
+        </div>
+        <div class="holdSub">
+          <span>Total</span>
+          <span>$56,260.2</span>
+        </div>
+      </div>
+      <div class="senconText">
+        <div class="holdSub">
+          <h5 class="topText">MY BALANCES</h5>
+          <h5 class="topText">Always show the 'Total' amount</h5>
+        </div>
+        <div class="holdSub attaMe">
+          <div class="subMenuText">
+            <span class="topText dollarMini">$</span>
+            <div style="line-height: 0;">
+              <h5 class="topText">REAL ACCOUNT</h5>
+              <span>$0.00</span>
+            </div>
+          </div>
+        <button class="subButin">Deposit</button>
+        </div>
+        <div class="holdSub attaMe" style="background-color: #2e3546;">
+          <div class="subMenuText">
+            <span class="topText dollarMini" style="background: #c05d09">$</span>
+            <div>
+              <h5 class="topText">REAL ACCOUNT</h5>
+              <span style="color: #c05d09">$0.00</span>
+            </div>
+          </div>
+        </div>
+        
+        <div class="holdSub attaMe" style="background-color: #ff00000d;">
+          <div class="subMenuText">
+            <div>
+              <h6 style="margin: 0;font-size: 11px;">MARGIN TRADING</h6>
+              <span style="font-size: 11px;">Enjoy the fully re--engineered Forex<br/>with the new interface and margin<br/>balance</span>
+            </div>
+          </div>
+          <div style="display: flex;flex-direction: column;">
+        <button class="subButin" style="margin-bottom: 10px;background-color: orangered;">Enable</button>
+        <button class="subButin" style="font-size: 11px;color: orangered;">Watch video</button>
+          </div>
+        </div>
+      </div>
+    </div>
     <div
       class="depositeBut"
       @click="alert = true"
@@ -41,7 +100,7 @@
       <q-card-section class="dialogHead">
         <div class="text-h6" style="font-size: 12px">Make a Deposit</div>
         <div class="text-h6" style="font-size: 12px; cursor: pointer">
-          <i class="fa fa-close" v-close-popup style="color: gray;"></i>
+          <i class="fa fa-close" v-close-popup style="color: gray"></i>
         </div>
       </q-card-section>
       <q-card-section class="q-pt-none">
@@ -57,7 +116,9 @@
               <li>Full-fledged platform</li>
             </ul>
             <button class="butinFill">
-              <span style="font-size: 17px;font-weight: bold;">Fill Up To $10,000</span><br />Free repllenishment
+              <span style="font-size: 17px; font-weight: bold"
+                >Fill Up To $10,000</span
+              ><br />Free repllenishment
             </button>
           </div>
           <div class="demo">
@@ -66,12 +127,23 @@
               <h5 class="h5 noWithD" style="color: rgb(44, 172, 64)">$0.00</h5>
             </div>
             <ul class="ulCol">
-              <li class="preMoney" style="color: rgb(44, 172, 64)">No withdrawals</li>
+              <li class="preMoney" style="color: rgb(44, 172, 64)">
+                No withdrawals
+              </li>
               <li>All assets available</li>
               <li>Full-fledged platform</li>
             </ul>
-            <button class="butinFill" style="background-color: rgb(44, 172, 64); color: white; font-size: 10px;">
-              <span style="font-size: 17px;font-weight: bold;">Fill Up To $10,000</span><br />And start real trading
+            <button
+              class="butinFill"
+              style="
+                background-color: rgb(44, 172, 64);
+                color: white;
+                font-size: 10px;
+              "
+            >
+              <span style="font-size: 17px; font-weight: bold"
+                >Fill Up To $10,000</span
+              ><br />And start real trading
             </button>
           </div>
         </div>
@@ -199,6 +271,74 @@ export default defineComponent({
   border: none;
   color: rgb(69, 73, 88);
   border-radius: 3px;
-  
 }
+
+.subchild {
+  position: absolute;
+  margin-top: 330px;
+  border: 1px solid gray;
+  width: 600px;
+  height: 270px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.moneyBox{
+  width: 250px;
+height: 270px;
+background-color: #262c3b;
+color: white;
+padding: 10px;
+}
+
+.topText{
+  margin: 0;
+font-size: 12px;
+}
+
+.holdSub{
+  display: flex;
+justify-content: space-between;
+}
+
+.senconText{
+  width: 350px;
+height: 270px;
+background-color: rgb(28, 32, 48);
+color: white;
+padding: 10px;
+}
+
+.subMenuText{
+  display: flex;
+  align-items: center;
+  margin: 0;
+font-size: 9px;
+}
+
+.dollarMini{
+  background-color: green;
+padding: 1px 6px;
+border-radius: 50px;
+margin-right: 7px;
+margin-top: 13px;
+}
+
+.subButin{
+  background-color: #323a4c;
+color: white;
+border: none;
+border-radius: 2px;
+width: 90px;
+height: 30px;
+}
+
+.attaMe{
+  align-items: center;
+margin: 8px 0;
+padding: 5px;
+}
+/* .active{
+  display: none;
+} */
 </style>
