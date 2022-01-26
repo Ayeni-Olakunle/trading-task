@@ -12,7 +12,14 @@
         style="font-size: 15px; color: #9a9ea6"
       ></i>
     </div>
-    <div class="depoAmont">
+    <div>
+    <div>
+      <div>work one</div>
+      <div>work two</div>
+    </div>
+
+    </div>
+    <div class="depoAmont" style="cursor: pointer;" @click="status = !status">
       <span
         >$56,260.2
         <i
@@ -22,7 +29,7 @@
       ></span>
       <span style="font-size: 11px">PRACTICE ACCOUNT</span>
     </div>
-    <div class="subchild active" >
+    <div class="subchild" :class="'initial ' + (status ? '' : 'active')"  >
       <div class="moneyBox">
         <h6 class="topText">Practice Account</h6>
         <div class="holdSub">
@@ -160,6 +167,11 @@ export default defineComponent({
   setup() {
     return {
       alert: ref(false),
+    };
+  },
+  data() {
+    return {
+      status: false,
     };
   },
 });
@@ -338,7 +350,10 @@ height: 30px;
 margin: 8px 0;
 padding: 5px;
 }
-/* .active{
+.active{
   display: none;
-} */
+}
+.Notactive{
+  display: none;
+}
 </style>
