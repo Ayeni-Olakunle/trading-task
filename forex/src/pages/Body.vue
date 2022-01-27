@@ -1,12 +1,12 @@
 <template>
   <div class="row">
-    <div class="col-3 kolo3">
+    <div class="col-3 kolo3" style="background-color: #191f2d;">
       <Layout1 />
     </div>
     <div class="col-8">
       <Layout2 />
     </div>
-    <div class="col-1 kolo3" style="padding: 5px;">
+    <div class="col-1 kolo3" style="padding: 5px; background-color: #191f2d;">
       <Layout3 />
     </div>
   </div>
@@ -37,7 +37,6 @@ export default defineComponent({
 }
 
 .kolo3 {
-  background-color: #191f2d;
   color: white;
   height: auto;
 }

@@ -1,11 +1,14 @@
 <template>
   <div class="holdIcon" @click="alert = true" label="Alert" color="primary">
+    <i class="fa fa-plus plum"></i>
     <div style="line-height: 1">
       <q-icon
         :name="icon"
         class="iconStyle"
       /><br />
       <span class="icontext">{{ iconName }}</span>
+    </div>
+    <div>
     </div>
   </div>
   <q-dialog v-model="alert">
@@ -53,18 +56,18 @@ export default defineComponent({
 
 <style scoped>
 .holdIcon {
-  background-color: #191f2d;
+  background-color: #242d41;;
   height: 85px;
   display: flex;
   justify-content: center;
   align-items: center;
   /* border-bottom: 1px solid gray; */
   text-align: center;
+  cursor: pointer;
 }
 .holdIcon .icontext .iconStyle:hover{
   color: white;
   background-color: #322d51;
-  cursor: pointer;
   transition: 0.5s;
 }
 
@@ -76,7 +79,8 @@ export default defineComponent({
 
 .icontext {
   font-size: 12px;
-  color: #b5b5b5;
+  color: #b5b5b575;
+  font-family: 'platformdefault', sans-serif;
 }
 
 .iconStyle{
@@ -84,10 +88,33 @@ export default defineComponent({
   margin: 5px 0px;
   color: #b5b5b5
 }
-/* 
-.iconStyle:hover{
+
+.plum{
+  position: absolute;
+z-index: 1;
+left: 4.5%;
+background-color: #4a5571;
+width: 15px;
+border-radius: 50px;
+height: 15px;
+display: flex;
+justify-content: center;
+align-items: center;
+color: #b5b5b5;
+font-size: 12px;
+visibility: hidden;
+margin-top: -59px;
+}
+
+.holdIcon:hover .iconStyle{
   color: white;
-} */
+}
+.holdIcon:hover .icontext{
+  color: white;
+}
+.holdIcon:hover .plum{
+  visibility: visible;
+}
 
 
 </style>

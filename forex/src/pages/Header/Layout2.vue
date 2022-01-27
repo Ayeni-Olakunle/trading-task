@@ -12,10 +12,22 @@
         style="font-size: 15px; color: #9a9ea6"
       ></i>
     </div>
-    <div>
-    <div>
-      <div>work one</div>
-      <div>work two</div>
+    <div class="cameraDrop">
+    <div style="display: flex">
+      <div class="cameraDropFirst">
+        <div>
+          <p style="color: #757f9b;font-size: 12px;">yourEmailAddress@gmail.com</p>
+          <div style="background-color: #3f4659;padding: 5px 10px;color: gainsboro;display: flex;align-items: center;">
+            <div style="border:2px solid gainsboro;border-radius:50px;margin-right:10px;width: 45px;height: 45px;display: flex;justify-content: center;align-items: center;">
+              <span>100%</span>
+            </div>
+            <div>
+              <span>Finish the guided tour to <br/>your first real trade</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="cameraDropSecond">work two</div>
     </div>
 
     </div>
@@ -95,8 +107,8 @@
       color="primary"
     >
       <i
-        class="fa fa-refresh fa-spin"
-        style="font-size: 20px; margin-right: 10px"
+        class="fa fa-refresh"
+        style="font-size: 15px; margin-right: 10px"
       ></i>
       Deposit
     </div>
@@ -355,5 +367,28 @@ padding: 5px;
 }
 .Notactive{
   display: none;
+}
+
+.cameraDrop{
+  position: absolute;
+margin-top: 360px;
+width: 500px;
+/* border: 1px solid red; */
+height: 300px;
+margin-right: 60px;
+}
+
+.cameraDropFirst{
+  width: 300px;
+height: 300px;
+background-color: #262c3b;
+padding: 20px;
+}
+
+.cameraDropSecond{
+  width: 250px;
+height: 300px;
+background-color: #1c2030;
+padding: 20px;
 }
 </style>
