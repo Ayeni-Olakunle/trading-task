@@ -2,16 +2,12 @@
   <div class="holdIcon" @click="alert = true" label="Alert" color="primary">
     <i class="fa fa-plus plum"></i>
     <div style="line-height: 1">
-      <q-icon
-        :name="icon"
-        class="iconStyle"
-      /><br />
+      <q-icon :name="icon" class="iconStyle" /><br />
       <span class="icontext">{{ iconName }}</span>
     </div>
-    <div>
-    </div>
+    <div></div>
   </div>
-  <q-dialog v-model="alert">
+  <!-- <q-dialog v-model="alert">
     <q-card>
       <q-card-section>
         <div class="text-h6">{{ iconName }}</div>
@@ -27,7 +23,7 @@
         <q-btn flat label="OK" color="primary" v-close-popup />
       </q-card-actions>
     </q-card>
-  </q-dialog>
+  </q-dialog> -->
 </template>
 
 <script>
@@ -56,16 +52,17 @@ export default defineComponent({
 
 <style scoped>
 .holdIcon {
-  background-color: #242d41;;
-  height: 85px;
+  background-color: #242d41;
+  height: 75px;
   display: flex;
   justify-content: center;
   align-items: center;
   /* border-bottom: 1px solid gray; */
   text-align: center;
+  padding: 0 5px;
   cursor: pointer;
 }
-.holdIcon .icontext .iconStyle:hover{
+.holdIcon .icontext .iconStyle:hover {
   color: white;
   background-color: #322d51;
   transition: 0.5s;
@@ -78,43 +75,44 @@ export default defineComponent({
 }
 
 .icontext {
-  font-size: 12px;
+  font-size: 10px;
   color: #b5b5b575;
-  font-family: 'platformdefault', sans-serif;
+  font-family: "platformdefault", sans-serif;
 }
 
-.iconStyle{
-  font-size: 26px;
+.iconStyle {
+  font-size: 22px;
   margin: 5px 0px;
-  color: #b5b5b5
+  color: #b5b5b5;
 }
 
-.plum{
+.plum {
   position: absolute;
-z-index: 1;
-left: 4.5%;
-background-color: #4a5571;
-width: 15px;
-border-radius: 50px;
-height: 15px;
-display: flex;
-justify-content: center;
-align-items: center;
-color: #b5b5b5;
-font-size: 12px;
-visibility: hidden;
-margin-top: -59px;
+  z-index: 1;
+  left: 4%;
+  background-color: #4a5571;
+  width: 15px;
+  border-radius: 50px;
+  height: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #b5b5b5;
+  font-size: 12px;
+  visibility: hidden;
+  margin-top: -59px;
 }
 
-.holdIcon:hover .iconStyle{
+.holdIcon :hover {
+  background-color: #3a4156;
+}
+.holdIcon:hover .iconStyle {
   color: white;
 }
-.holdIcon:hover .icontext{
+.holdIcon:hover .icontext {
   color: white;
 }
-.holdIcon:hover .plum{
+.holdIcon:hover .plum {
   visibility: visible;
 }
-
-
 </style>

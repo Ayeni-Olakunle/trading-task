@@ -1,15 +1,41 @@
 <template>
   <div style="display: flex">
-    <div style="border-right: 1px solid #525252; width: 100px">
-      <Layout1Icon icon="fa fa-briefcase" iconName="TOTAL PORTFOLIO" class="iconsMy" />
-      <Layout1Icon icon="fa fa-clock-o" iconName="TRACING HISTORY" class="iconsMy"/>
-      <Layout1Icon icon="fa fa-comments" iconName="CHART & SUPPORT" class="iconsMy"/>
-      <Layout1Icon icon="fa fa-list-alt" iconName="LEADE BOARD" class="iconsMy"/>
-      <Layout1Icon icon="fa fa-newspaper-o" iconName="MARKET ANALYSIS" class="iconsMy"/>
-      <Layout1Icon icon="fa fa-play-circle-o" iconName="VIDEO TUTORIALS" class="iconsMy"/>
-      <Layout1Icon icon="fa fa-ellipsis-h" iconName="MORE" class="iconsMy"/>
+    <div style="border-right: 1px solid rgb(82, 82, 82); width: min-content">
+      <Layout1Icon
+        icon="fa fa-briefcase"
+        iconName="TOTAL PORTFOLIO"
+        class="iconsMy"
+        @click="sideIcon = !sideIcon"
+      />
+      <Layout1Icon
+        icon="fa fa-clock-o"
+        iconName="TRACING HISTORY"
+        class="iconsMy"
+        @click="sideIcon = !sideIcon"
+      />
+      <Layout1Icon
+        icon="fa fa-comments"
+        iconName="CHART & SUPPORT"
+        class="iconsMy"
+      />
+      <Layout1Icon
+        icon="fa fa-list-alt"
+        iconName="LEADE BOARD"
+        class="iconsMy"
+      />
+      <Layout1Icon
+        icon="fa fa-newspaper-o"
+        iconName="MARKET ANALYSIS"
+        class="iconsMy"
+      />
+      <Layout1Icon
+        icon="fa fa-play-circle-o"
+        iconName="VIDEO TUTORIALS"
+        class="iconsMy"
+      />
+      <Layout1Icon icon="fa fa-ellipsis-h" iconName="MORE" class="iconsMy" />
     </div>
-    <div style="width: 100%; background-color: #242d41">
+    <div :class="'portfolioSection' + (sideIcon ? '' : ' sideIconMe2')">
       <div class="whishList">
         <div>
           <div
@@ -112,6 +138,60 @@
         </div>
       </div>
     </div>
+
+    <div
+      :class="'holdTrade' + (sideIcon ? 'sideIconMe' : '')"
+      style="width: 100%; padding: 10px"
+    >
+      <div class="tracingHis">
+        <div
+          style="
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+          "
+        >
+          <span>Trading History</span>
+          <i class="fa fa-close" style="font-size: 12px"></i>
+        </div>
+        <div style="padding: 20px 0">
+          <select name="" id="" class="select">
+            <option value="">All Positions</option>
+            <option value="">Binary Option</option>
+            <option value="">Digital Option</option>
+            <option value="">Forex</option>
+            <option value="">Stocks</option>
+            <option value="">Cryptocurrency</option>
+            <option value="">Commodities</option>
+            <option value="">ETFs</option>
+            <option value="">Indices</option>
+          </select>
+        </div>
+        <div>
+          <ul>
+            <li>
+              <div>
+                <div>
+                  <span>19:28</span>
+                  <span>25 Jan</span>
+                </div>
+                <div>
+                  <div>
+                    <i class="fa fa-bitcoin" style="font-size: 24px"></i>
+                    <span>Bitcoin</span>
+                  </div>
+                  <span>1 Binary</span>
+                </div>
+                <div>
+                  <span>+$4,980</span>
+                  <span>$6,000 <i class="fa fa-caret-down"></i></span>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
   </div>
 </template>
 
@@ -134,6 +214,8 @@ export default defineComponent({
   data() {
     return {
       status: false,
+      sideIcon: false,
+      sideIcon2: false,
     };
   },
   methods: {
@@ -141,15 +223,14 @@ export default defineComponent({
       // `this` will refer to the component instance
       alert("workinf");
     },
-    iconMy(){
+    iconMy() {
       for (let i = 0; i < 8; i++) {
         const element = 8;
         console.log(element);
       }
-    }
+    },
   },
 });
-
 </script>
 
 <style scoped>
@@ -242,10 +323,10 @@ export default defineComponent({
   cursor: pointer;
 }
 
-.pending{
+.pending {
   display: block;
 }
-.pending2{
+.pending2 {
   display: none;
 }
 
@@ -275,5 +356,27 @@ export default defineComponent({
 .h4MT {
   font-size: 12px;
   line-height: 0;
+}
+
+.portfolioSection {
+  width: 100%;
+  background-color: #242d41;
+  display: none;
+}
+
+.holdTrade {
+  width: 100%;
+  padding: 10px;
+  display: none;
+}
+.sideIconMe {
+  display: block;
+}
+.sideIconMe2 {
+  display: block;
+}
+
+.iconsMy:hover {
+  background-color: #3a4156;
 }
 </style>
