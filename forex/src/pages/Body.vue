@@ -1,12 +1,12 @@
 <template>
   <div class="row">
-    <div class="col-3 kolo3" style="background-color: #191f2d;">
+    <div class="col-3 kolo3">
       <Layout1 />
     </div>
     <div class="col-8">
       <Layout2 />
     </div>
-    <div class="col-1 kolo3" style="padding: 5px; background-color: #191f2d;">
+    <div class="col-1 kolo3" style="padding: 5px; background-color: #191f2d">
       <Layout3 />
     </div>
   </div>

@@ -5,13 +5,13 @@
         icon="fa fa-briefcase"
         iconName="TOTAL PORTFOLIO"
         class="iconsMy"
-        @click="sideIcon = !sideIcon"
+        @click="IconOne"
       />
       <Layout1Icon
         icon="fa fa-clock-o"
         iconName="TRACING HISTORY"
         class="iconsMy"
-        @click="sideIcon = !sideIcon"
+        @click="IconTwo"
       />
       <Layout1Icon
         icon="fa fa-comments"
@@ -35,8 +35,10 @@
       />
       <Layout1Icon icon="fa fa-ellipsis-h" iconName="MORE" class="iconsMy" />
     </div>
-    <div :class="'portfolioSection' + (sideIcon ? '' : ' sideIconMe2')">
-      <div class="whishList">
+    <div
+      :class="'portfolioSection' + (sideIcon ? ' sideIconMe' : ' sideIconMe2')"
+    >
+      <div :class="'whishList' + (sideIcon ? ' sideIconMe' : ' sideIconMe2')">
         <div>
           <div
             style="
@@ -48,7 +50,7 @@
             <span>Portfolio</span>
             <div>
               <i class="fa fa-window-maximize" style="margin-right: 10px"></i>
-              <i class="fa fa-close" @click="close"></i>
+              <i class="fa fa-close"></i>
             </div>
           </div>
 
@@ -72,7 +74,7 @@
             <div class="MTrade">
               <div class="MTHead">
                 <h4 class="h4MT">MARGIN TRADING</h4>
-                <i class="fa fa-close" @click="close"></i>
+                <i class="fa fa-close"></i>
               </div>
               <div style="font-size: 10px">
                 <p style="margin: 0; color: lightgray">
@@ -140,8 +142,8 @@
     </div>
 
     <div
-      :class="'holdTrade' + (sideIcon ? 'sideIconMe' : '')"
-      style="width: 100%; padding: 10px"
+      :class="'holdTrade' + (sideIcon2 ? ' sideIconMeTo' : ' sideIconMeTo2')"
+      style="width: 100%; padding: 10px; background-color: #242d41"
     >
       <div class="tracingHis">
         <div
@@ -215,19 +217,17 @@ export default defineComponent({
     return {
       status: false,
       sideIcon: false,
-      sideIcon2: false,
+      sideIcon2: true,
     };
   },
   methods: {
-    close() {
-      // `this` will refer to the component instance
-      alert("workinf");
+    IconOne() {
+      this.sideIcon = !this.sideIcon;
+      this.sideIcon2 = true;
     },
-    iconMy() {
-      for (let i = 0; i < 8; i++) {
-        const element = 8;
-        console.log(element);
-      }
+    IconTwo() {
+      this.sideIcon2 = !this.sideIcon2;
+      this.sideIcon = true;
     },
   },
 });
@@ -370,9 +370,17 @@ export default defineComponent({
   display: none;
 }
 .sideIconMe {
+  display: none;
+}
+
+.sideIconMe2 {
   display: block;
 }
-.sideIconMe2 {
+
+.sideIconMeTo {
+  display: none;
+}
+.sideIconMeTo2 {
   display: block;
 }
 
