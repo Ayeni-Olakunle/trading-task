@@ -3,8 +3,8 @@
     class="q-pa-md Flex row justify-end .self-center"
     style="padding: 5px 16px; align-items: center"
   >
-    <div class="HoldPro">
-      <div class="">
+    <div class="HoldPro" @click="photo = !photo">
+      <div>
         <i class="fa fa-camera imagePro"></i>
       </div>
       <i
@@ -12,26 +12,112 @@
         style="font-size: 15px; color: #9a9ea6"
       ></i>
     </div>
-    <div class="cameraDrop">
-    <div style="display: flex">
-      <div class="cameraDropFirst">
-        <div>
-          <p style="color: #757f9b;font-size: 12px;">yourEmailAddress@gmail.com</p>
-          <div style="background-color: #3f4659;padding: 5px 10px;color: gainsboro;display: flex;align-items: center;">
-            <div style="border:2px solid gainsboro;border-radius:50px;margin-right:10px;width: 45px;height: 45px;display: flex;justify-content: center;align-items: center;">
-              <span>100%</span>
-            </div>
-            <div>
-              <span>Finish the guided tour to <br/>your first real trade</span>
+    <div :class="'cameraDrop ' + (photo ? 'cameraDropDIs' : '')">
+      <div style="display: flex">
+        <div class="cameraDropFirst">
+          <div>
+            <p style="color: #757f9b; font-size: 12px">
+              yourEmailAddress@gmail.com
+            </p>
+            <div
+              style="
+                background-color: #3f4659;
+                padding: 5px 10px;
+                color: gainsboro;
+                display: flex;
+                align-items: center;
+              "
+            >
+              <div
+                style="
+                  border: 2px solid gainsboro;
+                  border-radius: 50px;
+                  margin-right: 10px;
+                  width: 45px;
+                  height: 45px;
+                  display: flex;
+                  justify-content: center;
+                  align-items: center;
+                "
+              >
+                <span>100%</span>
+              </div>
+              <div>
+                <span
+                  >Finish the guided tour to <br />your first real trade</span
+                >
+              </div>
             </div>
           </div>
         </div>
+        <div class="cameraDropSecond">
+          <div class="holdPhotoIcon">
+            <i
+              class="fa fa-camera"
+              style="font-size: 17px; margin-right: 10px"
+            ></i>
+            <span>Upload Photo</span>
+          </div>
+          <div class="holdPhotoIcon">
+            <i
+              class="fa fa-edit"
+              style="font-size: 17px; margin-right: 10px"
+            ></i>
+            <span>Personal Data</span>
+          </div>
+          <div class="holdPhotoIcon">
+            <i
+              class="fa fa-plus-circle"
+              style="font-size: 17px; margin-right: 10px"
+            ></i>
+            <span>Deposit</span>
+          </div>
+          <div class="holdPhotoIcon">
+            <i
+              class="fa fa-dollar"
+              style="font-size: 17px; margin-right: 10px"
+            ></i>
+            <span>Withdraw Funds</span>
+          </div>
+          <div class="holdPhotoIcon">
+            <i
+              class="fa fa-question-circle"
+              style="font-size: 17px; margin-right: 10px"
+            ></i>
+            <span>Contract Support</span>
+          </div>
+          <div class="holdPhotoIcon">
+            <i
+              class="fa fa-refresh"
+              style="font-size: 17px; margin-right: 10px"
+            ></i>
+            <span>Balance History</span>
+          </div>
+          <div class="holdPhotoIcon">
+            <i
+              class="fa fa-history"
+              style="font-size: 17px; margin-right: 10px"
+            ></i>
+            <span>Trading History</span>
+          </div>
+          <div class="holdPhotoIcon">
+            <i
+              class="fa fa-gear"
+              style="font-size: 17px; margin-right: 10px"
+            ></i>
+            <span>Settings</span>
+          </div>
+          <div class="holdPhotoIcon" style="border-top: 1px solid gray">
+            <i
+              class="fa fa-sign-out"
+              style="font-size: 17px; margin-right: 10px"
+            ></i>
+            <span>Log Out</span>
+          </div>
+        </div>
       </div>
-      <div class="cameraDropSecond">work two</div>
     </div>
-
-    </div>
-    <div class="depoAmont" style="cursor: pointer;" @click="status = !status">
+    <div class="depoAmont" style="cursor: pointer" @click="status = !status">
       <span
         >$56,260.2
         <i
@@ -41,7 +127,7 @@
       ></span>
       <span style="font-size: 11px">PRACTICE ACCOUNT</span>
     </div>
-    <div class="subchild" :class="'initial ' + (status ? '' : 'active')"  >
+    <div :class="'subchild ' + (status ? '' : 'active')">
       <div class="moneyBox">
         <h6 class="topText">Practice Account</h6>
         <div class="holdSub">
@@ -69,33 +155,45 @@
         <div class="holdSub attaMe">
           <div class="subMenuText">
             <span class="topText dollarMini">$</span>
-            <div style="line-height: 0;">
+            <div style="line-height: 0">
               <h5 class="topText">REAL ACCOUNT</h5>
               <span>$0.00</span>
             </div>
           </div>
-        <button class="subButin">Deposit</button>
+          <button class="subButin">Deposit</button>
         </div>
-        <div class="holdSub attaMe" style="background-color: #2e3546;">
+        <div class="holdSub attaMe" style="background-color: #2e3546">
           <div class="subMenuText">
-            <span class="topText dollarMini" style="background: #c05d09">$</span>
+            <span class="topText dollarMini" style="background: #c05d09"
+              >$</span
+            >
             <div>
               <h5 class="topText">REAL ACCOUNT</h5>
               <span style="color: #c05d09">$0.00</span>
             </div>
           </div>
         </div>
-        
-        <div class="holdSub attaMe" style="background-color: #ff00000d;">
+
+        <div class="holdSub attaMe" style="background-color: #ff00000d">
           <div class="subMenuText">
             <div>
-              <h6 style="margin: 0;font-size: 11px;">MARGIN TRADING</h6>
-              <span style="font-size: 11px;">Enjoy the fully re--engineered Forex<br/>with the new interface and margin<br/>balance</span>
+              <h6 style="margin: 0; font-size: 11px">MARGIN TRADING</h6>
+              <span style="font-size: 11px"
+                >Enjoy the fully re--engineered Forex<br />with the new
+                interface and margin<br />balance</span
+              >
             </div>
           </div>
-          <div style="display: flex;flex-direction: column;">
-        <button class="subButin" style="margin-bottom: 10px;background-color: orangered;">Enable</button>
-        <button class="subButin" style="font-size: 11px;color: orangered;">Watch video</button>
+          <div style="display: flex; flex-direction: column">
+            <button
+              class="subButin"
+              style="margin-bottom: 10px; background-color: orangered"
+            >
+              Enable
+            </button>
+            <button class="subButin" style="font-size: 11px; color: orangered">
+              Watch video
+            </button>
           </div>
         </div>
       </div>
@@ -106,10 +204,7 @@
       label="Alert"
       color="primary"
     >
-      <i
-        class="fa fa-refresh"
-        style="font-size: 15px; margin-right: 10px"
-      ></i>
+      <i class="fa fa-refresh" style="font-size: 15px; margin-right: 10px"></i>
       Deposit
     </div>
   </div>
@@ -184,6 +279,7 @@ export default defineComponent({
   data() {
     return {
       status: false,
+      photo: false,
     };
   },
 });
@@ -191,8 +287,8 @@ export default defineComponent({
 
 <style scoped>
 .depositeBut {
-  color: #258239;
-  border: 1px solid #258239;
+  color: #67f267;
+  border: 1px solid #67f267;
   padding: 7px 15px;
   font-size: 15px;
   border-radius: 4px;
@@ -200,8 +296,8 @@ export default defineComponent({
 }
 .depositeBut:hover {
   color: #020237;
-  background-color: #258239;
-  border: 1px solid #258239;
+  background-color: #67f267;
+  border: 1px solid #67f267;
   transition: 0.5s;
 }
 
@@ -236,6 +332,7 @@ export default defineComponent({
   justify-content: center;
   align-items: center;
   color: whitesmoke;
+  cursor: pointer;
 }
 
 .depositeButin {
@@ -307,88 +404,108 @@ export default defineComponent({
   justify-content: space-between;
 }
 
-.moneyBox{
+.moneyBox {
   width: 250px;
-height: 270px;
-background-color: #262c3b;
-color: white;
-padding: 10px;
+  height: 270px;
+  background-color: #262c3b;
+  color: white;
+  padding: 10px;
 }
 
-.topText{
+.topText {
   margin: 0;
-font-size: 12px;
+  font-size: 12px;
 }
 
-.holdSub{
+.holdSub {
   display: flex;
-justify-content: space-between;
+  justify-content: space-between;
 }
 
-.senconText{
+.senconText {
   width: 350px;
-height: 270px;
-background-color: rgb(28, 32, 48);
-color: white;
-padding: 10px;
+  height: 270px;
+  background-color: rgb(28, 32, 48);
+  color: white;
+  padding: 10px;
 }
 
-.subMenuText{
+.subMenuText {
   display: flex;
   align-items: center;
   margin: 0;
-font-size: 9px;
+  font-size: 9px;
 }
 
-.dollarMini{
+.dollarMini {
   background-color: green;
-padding: 1px 6px;
-border-radius: 50px;
-margin-right: 7px;
-margin-top: 13px;
+  padding: 1px 6px;
+  border-radius: 50px;
+  margin-right: 7px;
+  margin-top: 13px;
 }
 
-.subButin{
+.subButin {
   background-color: #323a4c;
-color: white;
-border: none;
-border-radius: 2px;
-width: 90px;
-height: 30px;
+  color: white;
+  border: none;
+  border-radius: 2px;
+  width: 90px;
+  height: 30px;
 }
 
-.attaMe{
+.attaMe {
   align-items: center;
-margin: 8px 0;
-padding: 5px;
+  margin: 8px 0;
+  padding: 5px;
 }
-.active{
+.active {
   display: none;
 }
-.Notactive{
+.Notactive {
   display: none;
 }
 
-.cameraDrop{
+.cameraDrop {
   position: absolute;
-margin-top: 360px;
-width: 500px;
-/* border: 1px solid red; */
-height: 300px;
-margin-right: 60px;
+  margin-top: 360px;
+  width: 500px;
+  /* border: 1px solid red; */
+  height: 300px;
+  margin-right: 60px;
+  display: none;
+}
+.cameraDropDIs {
+  display: block;
 }
 
-.cameraDropFirst{
+.cameraDropFirst {
   width: 300px;
-height: 300px;
-background-color: #262c3b;
-padding: 20px;
+  height: 350px;
+  background-color: #262c3b;
+  padding: 20px;
 }
 
-.cameraDropSecond{
+.cameraDropSecond {
   width: 250px;
-height: 300px;
-background-color: #1c2030;
-padding: 20px;
+  height: 350px;
+  background-color: #1c2030;
+  padding: 20px;
+  padding-top: 0;
+}
+
+.holdPhotoIcon {
+  color: #c8c8c8;
+  padding: 5px 10px;
+  cursor: pointer;
+  margin: 5px 0;
+}
+
+.holdPhotoIcon:hover {
+  color: white;
+  padding: 5px 10px;
+  background-color: #2b3143;
+  border-radius: 2px;
+  margin: 5px 0;
 }
 </style>
