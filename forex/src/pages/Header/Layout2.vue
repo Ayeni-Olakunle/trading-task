@@ -220,7 +220,7 @@
       <q-card-section class="q-pt-none">
         <div class="depositDemo">
           <div class="demo">
-            <div>
+            <div class="holdPractice">
               <p class="preaAcc">Practice Account</p>
               <h5 class="h5 noWithD">$10,085.84</h5>
             </div>
@@ -507,5 +507,9 @@ export default defineComponent({
   background-color: #2b3143;
   border-radius: 2px;
   margin: 5px 0;
+}
+
+.depoAmont:hover {
+  color: #c25a00;
 }
 </style>
