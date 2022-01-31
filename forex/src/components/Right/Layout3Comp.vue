@@ -14,7 +14,10 @@
   </div>
 
   <div>
-    <div class="amount" style="background-color: transparent;border: 1.5px solid #363d50;">
+    <div
+      class="amount"
+      style="background-color: #363d50; border: 1.5px solid #363d50"
+    >
       <div style="display: flex; justify-content: space-between">
         <p style="margin: 0">Multiplier</p>
         <i class="fa fa-question-circle"></i>
@@ -27,20 +30,20 @@
     </div>
   </div>
 
-  <!-- <div class="holdAmont">
+  <div class="holdAmont" style="text-align: left">
     <div class="holdProfit">
-      <p style="font-size: 14px; margin: 0; color: #9189c1">
+      <p style="font-size: 12px; margin: 0; color: #7c7f87">
         Volume <i class="fa fa-question-circle"></i>
       </p>
-      <p style="font-size: 22px; margin-bottom: 5px">$2k</p>
-      <p style="font-size: 14px; margin: 0; color: #9189c1">
+      <p style="font-size: 15px; margin-bottom: 5px; color: #c8c8c8">$2k</p>
+      <p style="font-size: 12px; margin: 0; color: #7c7f87">
         Piont Value <i class="fa fa-question-circle"></i>
       </p>
-      <p style="font-size: 22px; margin: 0">5.01k</p>
+      <p style="font-size: 15px; margin: 0; color: #c8c8c8">5.01k</p>
     </div>
-  </div> -->
+  </div>
 
-  <div class="holdAmont">
+  <!-- <div class="holdAmont">
     <div class="holdProfit">
       <p style="font-size: 14px; margin: 0">Profit <i class="fa fa-question-circle"></i></p>
       <p style="font-size: 32px; color: #20d638; margin: 0">+80%</p>
@@ -48,7 +51,7 @@
         +$0.80
       </p>
     </div>
-  </div>
+  </div> -->
 
   <div>
     <div class="amount" style="margin-bottom: 5px">

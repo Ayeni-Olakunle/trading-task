@@ -169,24 +169,151 @@
             <option value="">Indices</option>
           </select>
         </div>
-        <div>
-          <ul>
+        <div style="border-top: 1px solid #7f7f7f; padding: 10px 0">
+          <ul style="list-style-type: none; margin: 0; padding: 0; width: 100%">
             <li>
               <div>
-                <div>
+                <div
+                  style="
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    color: #cbcbcb;
+                  "
+                >
                   <span>19:28</span>
-                  <span>25 Jan</span>
-                </div>
-                <div>
                   <div>
-                    <i class="fa fa-bitcoin" style="font-size: 24px"></i>
-                    <span>Bitcoin</span>
+                    <i
+                      class="fa fa-bitcoin"
+                      style="
+                        background-color: #b97700;
+                        padding: 2px 3px;
+                        border-radius: 50px;
+                      "
+                    ></i>
+                    <span style="margin-left: 5px">Bitcoin</span>
                   </div>
-                  <span>1 Binary</span>
+                  <span style="font-weight: bold; color: green">+$4,980</span>
                 </div>
-                <div>
-                  <span>+$4,980</span>
-                  <span>$6,000 <i class="fa fa-caret-down"></i></span>
+                <div
+                  style="
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    font-size: 10px;
+                    text-align: left;
+                    color: gray;
+                  "
+                >
+                  <span>25 Jan</span>
+                  <span>1 Binary</span>
+                  <span
+                    >$6,000
+                    <i
+                      class="fa fa-caret-down"
+                      style="font-weight: bold; color: green"
+                    ></i
+                  ></span>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <div style="border-top: 1px solid #7f7f7f; padding: 10px 0">
+          <ul style="list-style-type: none; margin: 0; padding: 0; width: 100%">
+            <li>
+              <div>
+                <div
+                  style="
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    color: #cbcbcb;
+                  "
+                >
+                  <span>19:28</span>
+                  <div>
+                    <i
+                      class="fa fa-bitcoin"
+                      style="
+                        background-color: #b97700;
+                        padding: 2px 3px;
+                        border-radius: 50px;
+                      "
+                    ></i>
+                    <span style="margin-left: 5px">Bitcoin</span>
+                  </div>
+                  <span style="font-weight: bold; color: green">+$4,980</span>
+                </div>
+                <div
+                  style="
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    font-size: 10px;
+                    text-align: left;
+                    color: gray;
+                  "
+                >
+                  <span>25 Jan</span>
+                  <span>1 Binary</span>
+                  <span
+                    >$6,000
+                    <i
+                      class="fa fa-caret-down"
+                      style="font-weight: bold; color: green"
+                    ></i
+                  ></span>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <div style="border-top: 1px solid #7f7f7f; padding: 10px 0">
+          <ul style="list-style-type: none; margin: 0; padding: 0; width: 100%">
+            <li>
+              <div>
+                <div
+                  style="
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    color: #cbcbcb;
+                  "
+                >
+                  <span>19:28</span>
+                  <div>
+                    <i
+                      class="fa fa-bitcoin"
+                      style="
+                        background-color: #b97700;
+                        padding: 2px 3px;
+                        border-radius: 50px;
+                      "
+                    ></i>
+                    <span style="margin-left: 5px">Bitcoin</span>
+                  </div>
+                  <span style="font-weight: bold; color: green">+$4,980</span>
+                </div>
+                <div
+                  style="
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    font-size: 10px;
+                    text-align: left;
+                    color: gray;
+                  "
+                >
+                  <span>25 Jan</span>
+                  <span>1 Binary</span>
+                  <span
+                    >$6,000
+                    <i
+                      class="fa fa-caret-down"
+                      style="font-weight: bold; color: green"
+                    ></i
+                  ></span>
                 </div>
               </div>
             </li>
