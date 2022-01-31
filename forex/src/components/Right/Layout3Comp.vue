@@ -62,11 +62,14 @@
 
   <div class="holdAmont">
     <div class="amountBuy" @click="alert = true">
-      <i
-        class="fa fa-line-chart Flex row justify-end self-center"
+      <img
+        :src="buy"
+        alt=""
+        srcset=""
+        class="Flex row justify-end self-center"
         style="font-size: 20px; margin: 12px 0"
-      ></i>
-      <p style="margin: 5px">HIGHER</p>
+      />
+      <p style="margin: 5px">Buy</p>
     </div>
   </div>
   <q-dialog v-model="alert">
@@ -89,11 +92,14 @@
 
   <div class="holdAmont">
     <div class="amountSell" @click="alert = true" label="Alert" color="primary">
-      <i
-        class="fa fa-line-chart Flex row justify-end self-center"
+      <img
+        :src="sell"
+        alt=""
+        srcset=""
+        class="Flex row justify-end self-center"
         style="font-size: 20px; margin: 12px 0"
-      ></i>
-      <p style="margin: 5px">LOWER</p>
+      />
+      <p style="margin: 5px">Sell</p>
     </div>
   </div>
 
@@ -117,11 +123,15 @@
 <script>
 import { defineComponent } from "vue";
 import { ref } from "vue";
+import buy from "../../assets/buy.svg";
+import sell from "../../assets/sell.svg";
 
 export default defineComponent({
   name: "Layout3Comp",
   setup() {
     return {
+      buy: buy,
+      sell: sell,
       value: ref(true),
       count: ref("money"),
       alert: ref(false),
