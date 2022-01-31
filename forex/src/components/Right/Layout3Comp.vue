@@ -64,8 +64,7 @@
     <div class="amountBuy" @click="alert = true">
       <img
         :src="buy"
-        alt=""
-        srcset=""
+        alt="Buy"
         class="Flex row justify-end self-center"
         style="font-size: 20px; margin: 12px 0"
       />
@@ -94,8 +93,7 @@
     <div class="amountSell" @click="alert = true" label="Alert" color="primary">
       <img
         :src="sell"
-        alt=""
-        srcset=""
+        alt="Sell"
         class="Flex row justify-end self-center"
         style="font-size: 20px; margin: 12px 0"
       />
