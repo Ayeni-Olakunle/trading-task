@@ -66,7 +66,7 @@
         :src="buy"
         alt="Buy"
         class="Flex row justify-end self-center"
-        style="font-size: 20px; margin: 12px 0"
+        style="font-size: 6px; margin: 7px 0px; height: 20px"
       />
       <p style="margin: 5px">Buy</p>
     </div>
@@ -95,7 +95,7 @@
         :src="sell"
         alt="Sell"
         class="Flex row justify-end self-center"
-        style="font-size: 20px; margin: 12px 0"
+        style="font-size: 6px; margin: 7px 0px; height: 20px"
       />
       <p style="margin: 5px">Sell</p>
     </div>
@@ -121,8 +121,8 @@
 <script>
 import { defineComponent } from "vue";
 import { ref } from "vue";
-import buy from "../../assets/buy.svg";
-import sell from "../../assets/sell.svg";
+import buy from "../../assets/dec.png";
+import sell from "../../assets/decs.png";
 
 export default defineComponent({
   name: "Layout3Comp",

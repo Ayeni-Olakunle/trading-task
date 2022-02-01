@@ -2,7 +2,27 @@
   <div>
     <div class="holdMargin">
       <div class="margin">
-        <span>Margin (2) <span class="marginText">-$0.25</span></span>
+        <span
+          >Margin (2)
+          <span class="marginText"
+            >-$0.25
+            <svg
+              id="Capa_1"
+              enable-background="new 0 0 512 512"
+              height="25"
+              viewBox="0 0 512 512"
+              width="25"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <g>
+                <path
+                  d="m482 330h-91v152h-30v-242h-90v242h-30v-182h-90v182h-30v-302h-91v302h-30v30h511l1-30h-30z"
+                ></path>
+                <path
+                  d="m482 218.789-166-165-120 120-174.789-173.789-21.211 21.211 196 195 120-120 144.789 143.789h-69.789v30h121v-120h-30z"
+                ></path>
+              </g></svg></span
+        ></span>
       </div>
       <div style="color: #9197a7; cursor: pointer" @click="tog">
         Show position <i class="fa fa-angle-down"></i>
@@ -16,7 +36,7 @@
           ><i class="fa fa-cog fa-spin marLeft"></i
         ></span>
         <span class="marLeft"
-          >Balance <span class="marLeft2 subCol">$15,065.84</span></span
+          >Balance <span class="marLeft2 subCol">$15,065.84 </span></span
         >
         <span class="marLeft"
           >Equlity <span class="marLeft2 subCol">$15,063.56</span></span
