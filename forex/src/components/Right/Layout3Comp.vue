@@ -68,7 +68,7 @@
         class="Flex row justify-end self-center"
         style="font-size: 6px; margin: 7px 0px; height: 20px"
       />
-      <p style="margin: 5px">Buy</p>
+      <p>Buy</p>
     </div>
   </div>
   <q-dialog v-model="alert">
@@ -97,7 +97,7 @@
         class="Flex row justify-end self-center"
         style="font-size: 6px; margin: 7px 0px; height: 20px"
       />
-      <p style="margin: 5px">Sell</p>
+      <p>Sell</p>
     </div>
   </div>
 
