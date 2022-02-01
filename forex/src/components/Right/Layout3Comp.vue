@@ -66,7 +66,7 @@
         :src="buy"
         alt="Buy"
         class="Flex row justify-end self-center"
-        style="font-size: 6px; margin: 7px 0px; height: 20px"
+        style="font-size: 6px; margin: 17px 0 0 0; height: 20px"
       />
       <p>Buy</p>
     </div>
@@ -95,7 +95,7 @@
         :src="sell"
         alt="Sell"
         class="Flex row justify-end self-center"
-        style="font-size: 6px; margin: 7px 0px; height: 20px"
+        style="font-size: 6px; margin: 17px 0 0 0; height: 20px"
       />
       <p>Sell</p>
     </div>
