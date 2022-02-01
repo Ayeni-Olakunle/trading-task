@@ -1,6 +1,13 @@
 <template>
-  <div style="display: flex">
-    <div style="border-right: 1px solid rgb(82, 82, 82); width: min-content">
+  <div style="display: flex; height: 100vh">
+    <div
+      style="
+        border-right: 1px solid rgb(82, 82, 82);
+        width: min-content;
+        height: 100vh;
+        background-color: #242d41;
+      "
+    >
       <Layout1Icon
         icon="fa fa-briefcase"
         iconName="TOTAL PORTFOLIO"

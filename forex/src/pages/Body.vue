@@ -10,18 +10,21 @@
       <Layout3 />
     </div>
   </div>
+  <MarginTable />
   <Footer />
 </template>
 
 <script>
 import { defineComponent } from "vue";
 import Footer from "./Footer/Footer.vue";
+import MarginTable from "./MarginTable/MarginTable.vue";
 import Layout3 from "./Body/Layout3.vue";
 import Layout2 from "./Body/Layout2.vue";
 import Layout1 from "./Body/Layout1.vue";
 export default defineComponent({
   name: "Body",
   components: {
+    MarginTable,
     Footer,
     Layout3,
     Layout2,
