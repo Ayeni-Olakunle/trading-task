@@ -66,9 +66,9 @@
         :src="buy"
         alt="Buy"
         class="Flex row justify-end self-center"
-        style="font-size: 6px; margin: 17px 0 0 0; height: 20px"
+        style="font-size: 6px; margin: 10px 0 0 0; height: 20px"
       />
-      <p>Buy</p>
+      <p style="margin: 0 0 10px">Buy</p>
     </div>
   </div>
   <q-dialog v-model="alert">
@@ -95,16 +95,16 @@
         :src="sell"
         alt="Sell"
         class="Flex row justify-end self-center"
-        style="font-size: 6px; margin: 17px 0 0 0; height: 20px"
+        style="font-size: 6px; margin: 10px 0 0 0; height: 20px"
       />
-      <p>Sell</p>
+      <p style="margin: 0 0 10px">Sell</p>
     </div>
   </div>
 
-  <div style="display: flex; justify-content: space-between; padding: 5px">
+  <!-- <div style="display: flex; justify-content: space-between; padding: 5px">
     <p style="margin: 0">Spread</p>
     <p style="margin: 0">0.007</p>
-  </div>
+  </div> -->
 
   <!-- <button style="background-color: #363d50; border: none; color: white">
     Purchase at...
@@ -156,7 +156,7 @@ export default defineComponent({
 .amount {
   background-color: #363d50;
   width: 100%;
-  padding: 10px;
+  padding: 0 10px;
   font-size: 12px;
   border-radius: 2px;
   margin-bottom: 3px;
@@ -211,7 +211,7 @@ export default defineComponent({
   justify-content: center;
   font-size: 15px;
   margin-bottom: 5px;
-  padding: 0 5px;
+  /* padding: 0 5px; */
 }
 
 .holdProfit {

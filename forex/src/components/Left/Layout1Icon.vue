@@ -53,7 +53,7 @@ export default defineComponent({
 <style scoped>
 .holdIcon {
   background-color: #242d41;
-  height: 75px;
+  height: 60px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -100,7 +100,8 @@ export default defineComponent({
   color: #b5b5b5;
   font-size: 12px;
   visibility: hidden;
-  margin-top: -59px;
+  margin-top: -40px;
+  /* top: 15%; */
 }
 
 .holdIcon :hover {

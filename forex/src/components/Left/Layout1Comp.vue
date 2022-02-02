@@ -1,10 +1,9 @@
 <template>
-  <div style="display: flex; height: 100vh">
+  <div style="display: flex">
     <div
       style="
         border-right: 1px solid rgb(82, 82, 82);
         width: min-content;
-        height: 100vh;
         background-color: #242d41;
       "
     >
@@ -104,10 +103,10 @@
               </select>
             </div>
 
-            <div style="margin-top: 100px; text-align: center">
+            <div style="margin-top: 70px; text-align: center">
               <i
                 class="fa fa-cubes"
-                style="font-size: 70px; color: #363d50"
+                style="font-size: 50px; color: #363d50"
               ></i>
               <div style="font-size: 20px; color: #363d50">
                 You have no open<br />

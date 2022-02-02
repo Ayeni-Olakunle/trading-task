@@ -2,33 +2,68 @@
   <div>
     <div class="holdMargin">
       <div class="margin">
-        <span
-          >Margin (2)
-          <span class="marginText"
-            >-$0.25
-            <svg
-              id="Capa_1"
-              enable-background="new 0 0 512 512"
-              height="25"
-              viewBox="0 0 512 512"
-              width="25"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <g>
-                <path
-                  d="m482 330h-91v152h-30v-242h-90v242h-30v-182h-90v182h-30v-302h-91v302h-30v30h511l1-30h-30z"
-                ></path>
-                <path
-                  d="m482 218.789-166-165-120 120-174.789-173.789-21.211 21.211 196 195 120-120 144.789 143.789h-69.789v30h121v-120h-30z"
-                ></path>
-              </g></svg></span
-        ></span>
+        <span>Margin (2) <span class="marginText">-$0.25</span></span>
       </div>
       <div style="color: #9197a7; cursor: pointer" @click="tog">
         Show position <i class="fa fa-angle-down"></i>
       </div>
     </div>
-    <div :class="'tableN' + (sideIcon2 ? ' high' : '')"></div>
+    <div>
+      <div style="width: 100%" :class="maTableMe ? '' : 'high'">
+        <div
+          style="
+            color: #989898;
+            display: flex;
+            font-size: 12px;
+            border-bottom: 1px solid #424242;
+            padding: 10px 0;
+            background-color: #191f2d;
+          "
+        >
+          <p style="width: 3rem; margin-bottom: 0">
+            <i class="fa fa-cog fa-spin marLeft"></i>
+          </p>
+          <p style="width: 6rem; margin-bottom: 0">Name</p>
+          <p style="width: 6rem; margin-bottom: 0">Quantity</p>
+          <p style="width: 6rem; margin-bottom: 0">Margin</p>
+          <p style="width: 9rem; margin-bottom: 0">Open</p>
+          <p style="width: 9rem; margin-bottom: 0">Current Price</p>
+          <p style="width: 9rem; margin-bottom: 0">Take Profit</p>
+          <p style="width: 9rem; margin-bottom: 0">Stop Loss</p>
+          <p style="width: 6rem; margin-bottom: 0">Swap</p>
+          <p style="width: 9rem; margin-bottom: 0">Net/PL</p>
+          <p></p>
+        </div>
+        <div class="marginFlex">
+          <TableTrade
+            bit="fa fa-bitcoin"
+            coinName="Bitcoin"
+            Quantity="0.001"
+            Margin="0.41"
+            Open="345432.785"
+            CurrentPrice="2334346"
+            TakeProfit="Add"
+            StopLoss="Add"
+            Swap="$0.02"
+            NetPL="-$1.42"
+          />
+        </div>
+        <div class="marginFlex">
+          <TableTrade
+            bit="fa fa-bitcoin"
+            coinName="Bitcoin"
+            Quantity="0.001"
+            Margin="0.41"
+            Open="345432.785"
+            CurrentPrice="2334346"
+            TakeProfit="Add"
+            StopLoss="Add"
+            Swap="$0.02"
+            NetPL="-$1.42"
+          />
+        </div>
+      </div>
+    </div>
     <div class="holdColseB backGroundF">
       <div class="colNow">
         <span class="marLeft"
@@ -65,16 +100,21 @@
 
 <script>
 import { defineComponent } from "vue";
+import TableTrade from "./TableTrade.vue";
 export default defineComponent({
   name: "MarginTable",
+  components: {
+    TableTrade,
+  },
   data() {
     return {
-      sideIcon2: false,
+      maTableMe: false,
     };
   },
   methods: {
     tog() {
-      this.sideIcon2 = !this.sideIcon2;
+      alert("woring");
+      this.maTableMe = !this.maTableMe;
     },
   },
 });
@@ -93,7 +133,7 @@ export default defineComponent({
   color: white;
   padding: 1px 15px;
   background-color: #191f2d;
-  margin: 4px 0;
+  margin: 6px 0 0 0;
   font-size: 11px;
 }
 
@@ -155,6 +195,23 @@ export default defineComponent({
 }
 
 .high {
-  height: 150px;
+  display: none;
+}
+
+.marginFlex {
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  background-color: #191f2d;
+}
+
+.tableTr {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 10px;
+  color: #b5b5b5;
 }
 </style>

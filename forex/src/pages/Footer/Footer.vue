@@ -9,7 +9,10 @@
 
     <div style="display: flex; justify-content: start; align-items: center">
       <div>
-        <i class="fa fa-volume-up" style="color: #b5b5b5; margin-right: 15px"></i>
+        <i
+          class="fa fa-volume-up"
+          style="color: #b5b5b5; margin-right: 15px"
+        ></i>
         <i
           class="fa fa-cog fa-spin"
           style="color: #b5b5b5; margin-right: 15px"
@@ -36,7 +39,7 @@ export default defineComponent({
   display: flex;
   justify-content: space-between;
   align-items: center;
-    padding: 5px;
+  /* padding: 5px; */
 }
 
 .support {
