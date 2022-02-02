@@ -5,6 +5,7 @@
         border-right: 1px solid rgb(82, 82, 82);
         width: min-content;
         background-color: #242d41;
+        <!-- height: 76.25vh; -->
       "
     >
       <Layout1Icon
@@ -135,7 +136,7 @@
             <div style="margin-top: 100px; text-align: center">
               <i
                 class="fa fa-cubes"
-                style="font-size: 70px; color: #363d50"
+                style="font-size: 68px; color: #363d50"
               ></i>
               <div style="font-size: 20px; color: #363d50">
                 You have no open<br />

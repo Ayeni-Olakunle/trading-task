@@ -6,7 +6,10 @@
     <div class="col-8">
       <Layout2 />
     </div>
-    <div class="col-1 kolo3" style="padding: 5px; background-color: #191f2d">
+    <div
+      class="col-1 kolo3"
+      style="padding: 0 5px 0 5px; background-color: #191f2d"
+    >
       <Layout3 />
     </div>
   </div>

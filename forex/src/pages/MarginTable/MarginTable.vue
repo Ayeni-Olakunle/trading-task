@@ -113,7 +113,6 @@ export default defineComponent({
   },
   methods: {
     tog() {
-      alert("woring");
       this.maTableMe = !this.maTableMe;
     },
   },
