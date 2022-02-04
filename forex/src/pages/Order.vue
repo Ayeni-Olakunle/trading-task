@@ -2,10 +2,10 @@
   <div class="holdAll">
     <HeadMe/>
     <div class="row" style="justify-content: space-between;">
-      <div class="col-0.5 kolo3">
+      <div class="col-1 kolo3">
         <Layout1 />
       </div>
-      <div class="col-11" style="width: 90.9%; background-color: rgb(36, 45, 65);">
+      <div class="col-11" style="background-color: rgb(36, 45, 65);">
         <OrderBookCom />
       </div>
       <!-- <div
