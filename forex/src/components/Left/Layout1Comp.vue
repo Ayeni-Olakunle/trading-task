@@ -8,7 +8,8 @@
       "
     >
 
-      <q-btn to="/Trade">
+      <!-- <div> -->
+      <q-btn to="/">
       <Layout1Icon
         icon="fa fa-tachometer"
         iconName="TRADE"
@@ -18,7 +19,7 @@
         to="/Trade"
       />
       </q-btn>
-      <q-btn to="/OrderBook">
+      <q-ajax-bar to="/OrderBook">
       <Layout1Icon
         icon="fa fa-film"
         iconName="ORDER"
@@ -26,29 +27,37 @@
         class="iconsMy"
         @click="IconTwo"
       />
-      </q-btn>
+      </q-ajax-bar>
+      <q-btn to="/OrderBook">
       <Layout1Icon
         icon="fa fa-comments"
         iconName="MARKET"
         class="iconsMy"
       />
+      </q-btn>
+      <q-btn to="/OrderBook">
       <Layout1Icon
         icon="fa fa-cubes"
         iconName="TRADING"
         iconName2="PLAN"
         class="iconsMy"
       />
+      </q-btn>
+      <q-btn to="/TransactionHistory">
       <Layout1Icon
         icon="fa fa-history"
         iconName="TRANSACTION"
         iconName2="HISTORY"
         class="PROFILE"
       />
+      </q-btn>
+      <q-btn to="/UserProfile">
       <Layout1Icon
         icon="fa fa-user"
         iconName="PROFILE"
         class="iconsMy"
       />
+      </q-btn>
       <!-- <Layout1Icon icon="fa fa-ellipsis-h" iconName="MORE" class="iconsMy" /> -->
     </div>
 

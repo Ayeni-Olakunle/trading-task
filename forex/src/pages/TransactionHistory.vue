@@ -2,11 +2,11 @@
   <div class="holdAll">
     <HeadMe/>
     <div class="row" style="justify-content: space-between;">
-      <div class="col-0.5 kolo3">
+      <div class="col-1 kolo3">
         <Layout1 />
       </div>
-      <div class="col-11" style="width: 90.9%; background-color: rgb(36, 45, 65);">
-        <OrderBookCom />
+      <div class="col-11" style=" background-color: rgb(36, 45, 65);">
+        <TransactionHistory />
       </div>
       <!-- <div
         class="col-1 kolo3"
@@ -26,13 +26,13 @@ import Footer from "./Footer/Footer.vue";
 import MarginTable from "./MarginTable/MarginTable.vue";
 import Layout1 from "./Body/Layout1.vue";
 import HeadMe from "./Header.vue";
-import OrderBookCom from "../components/OrderBook/OB-Layout1.vue"
+import TransactionHistory from "../components/TransactionHistory/TH-Layout1.vue"
 export default defineComponent({
   name: "Body",
   components: {
     MarginTable,
     Footer,
-    OrderBookCom,
+    TransactionHistory,
     Layout1,
     HeadMe
   },

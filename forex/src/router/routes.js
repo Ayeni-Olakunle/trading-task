@@ -14,6 +14,18 @@ const routes = [
     component: () => import("layouts/OrderBook.vue"),
     children: [{ path: "", component: () => import("pages/Order.vue") }],
   },
+  {
+    path: "/TransactionHistory",
+    component: () => import("layouts/TransactionHistory.vue"),
+    children: [
+      { path: "", component: () => import("pages/TransactionHistory.vue") },
+    ],
+  },
+  {
+    path: "/UserProfile",
+    component: () => import("layouts/UserProfile.vue"),
+    children: [{ path: "", component: () => import("pages/UserProfile.vue") }],
+  },
 
   // Always leave this as last one,
   // but you can also remove it
