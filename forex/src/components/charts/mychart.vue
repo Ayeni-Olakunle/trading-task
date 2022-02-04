@@ -1,7 +1,7 @@
 <template>
   <apexchart
     type="candlestick"
-    height="450"
+    style="height: 100%;"
     :options="chartOptions"
     :series="series"
   ></apexchart>
