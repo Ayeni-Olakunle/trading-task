@@ -51,13 +51,13 @@
         class="PROFILE"
       />
       </q-btn>
-      <!-- <q-btn to="/UserProfile" style="width: 100%;">
+      <q-btn to="/UserProfile" style="width: 100%;">
       <Layout1Icon
         icon="fa fa-user"
         iconName="PROFILE"
         class="iconsMy"
       />
-      </q-btn> -->
+      </q-btn>
       <!-- <Layout1Icon icon="fa fa-ellipsis-h" iconName="MORE" class="iconsMy" /> -->
     </div>
 
