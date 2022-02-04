@@ -17,6 +17,7 @@
     "core-js": "^3.6.5",
     "quasar": "^2.0.0",
     "trading-vue-js": "^1.0.2",
+    "vue3-apexcharts": "^1.4.1",
     "vuex": "^4.0.1"
   },
   "devDependencies": {

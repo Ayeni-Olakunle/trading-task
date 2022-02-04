@@ -3,7 +3,8 @@
     <i class="fa fa-plus plum"></i>
     <div style="line-height: 1">
       <q-icon :name="icon" class="iconStyle" /><br />
-      <span class="icontext">{{ iconName }}</span>
+      <span class="icontext">{{ iconName }}</span><br/>
+      <span class="icontext">{{ iconName2 }}</span>
     </div>
     <div></div>
   </div>
@@ -41,6 +42,10 @@ export default defineComponent({
       type: String,
       default: "",
     },
+    iconName2: {
+      type: String,
+      default: "",
+    },
   },
   setup() {
     return {
@@ -53,7 +58,7 @@ export default defineComponent({
 <style scoped>
 .holdIcon {
   background-color: #242d41;
-  height: 60px;
+  height: 80px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -88,20 +93,21 @@ export default defineComponent({
 
 .plum {
   position: absolute;
-  z-index: 1;
-  left: 4%;
-  background-color: #4a5571;
-  width: 15px;
-  border-radius: 50px;
-  height: 15px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  color: #b5b5b5;
-  font-size: 12px;
-  visibility: hidden;
-  margin-top: -40px;
-  /* top: 15%; */
+z-index: 1;
+/* left: 5%; */
+background-color: #4a5571;
+width: 15px;
+border-radius: 50px;
+height: 15px;
+display: flex;
+justify-content: center;
+align-items: center;
+color: #b5b5b5;
+font-size: 12px;
+visibility: hidden;
+margin-top: -60px;
+/* top: 15%; */
+margin-left: 50px;
 }
 
 .holdIcon :hover {

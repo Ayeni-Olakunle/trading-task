@@ -1,21 +1,18 @@
 <template>
-  <div class="holdLayout1">
-    <!-- <Layout2Graph /> -->
-    <!-- <img src="./graph.jpeg" alt="" srcset="" /> -->
-  </div>
+  <q-page class="flex flex-center">
+    <chartMe />
+  </q-page>
 </template>
 
 <script>
-import { defineComponent } from "vue";
-// import Layout2Graph from "src/pages/Body/Middle/Layout2Graph.vue";
-import Layout2Graph from "src/components/Middle/Layout2Graph.vue";
-
+import { defineComponent, defineAsyncComponent } from "vue";
+const chartMe = defineAsyncComponent(() =>
+  import("components/charts/mychart.vue")
+);
 export default defineComponent({
-  name: "Layout1",
-  // components: {
-  //   Layout2Graph,
-  // },
+  name: "Layout2",
+  components: {
+    chartMe,
+  },
 });
 </script>
-
-<style scoped></style>

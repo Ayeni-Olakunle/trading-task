@@ -5,44 +5,48 @@
         border-right: 1px solid rgb(82, 82, 82);
         width: min-content;
         background-color: #242d41;
-        <!-- height: 76.25vh; -->
       "
     >
       <Layout1Icon
-        icon="fa fa-briefcase"
-        iconName="TOTAL PORTFOLIO"
+        icon="fa fa-tachometer"
+        iconName="TRADE"
+        iconName2="STATION"
         class="iconsMy"
         @click="IconOne"
       />
       <Layout1Icon
-        icon="fa fa-clock-o"
-        iconName="TRACING HISTORY"
+        icon="fa fa-film"
+        iconName="ORDER"
+        iconName2="BOOK"
         class="iconsMy"
         @click="IconTwo"
       />
       <Layout1Icon
         icon="fa fa-comments"
-        iconName="CHART & SUPPORT"
+        iconName="MARKET"
         class="iconsMy"
       />
       <Layout1Icon
-        icon="fa fa-list-alt"
-        iconName="LEADE BOARD"
+        icon="fa fa-cubes"
+        iconName="TRADING"
+        iconName2="PLAN"
         class="iconsMy"
       />
       <Layout1Icon
-        icon="fa fa-newspaper-o"
-        iconName="MARKET ANALYSIS"
-        class="iconsMy"
+        icon="fa fa-history"
+        iconName="TRANSACTION"
+        iconName2="HISTORY"
+        class="PROFILE"
       />
       <Layout1Icon
-        icon="fa fa-play-circle-o"
-        iconName="VIDEO TUTORIALS"
+        icon="fa fa-user"
+        iconName="PROFILE"
         class="iconsMy"
       />
-      <Layout1Icon icon="fa fa-ellipsis-h" iconName="MORE" class="iconsMy" />
+      <!-- <Layout1Icon icon="fa fa-ellipsis-h" iconName="MORE" class="iconsMy" /> -->
     </div>
-    <div
+
+    <!-- <div
       :class="'portfolioSection' + (sideIcon ? ' sideIconMe' : ' sideIconMe2')"
     >
       <div :class="'whishList' + (sideIcon ? ' sideIconMe' : ' sideIconMe2')">
@@ -327,7 +331,7 @@
           </ul>
         </div>
       </div>
-    </div>
+    </div> -->
   </div>
 </template>
 

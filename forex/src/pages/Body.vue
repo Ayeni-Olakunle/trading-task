@@ -1,20 +1,22 @@
 <template>
-  <div class="row">
-    <div class="col-3 kolo3">
-      <Layout1 />
+  <div class="holdAll">
+    <div class="row" style="justify-content: space-between;">
+      <div class="col-0.5 kolo3">
+        <Layout1 />
+      </div>
+      <div class="col-10">
+        <Layout2 />
+      </div>
+      <div
+        class="col-1 kolo3"
+        style="padding: 0 5px 0 5px; background-color: #191f2d"
+      >
+        <Layout3 />
+      </div>
     </div>
-    <div class="col-8">
-      <Layout2 />
-    </div>
-    <div
-      class="col-1 kolo3"
-      style="padding: 0 5px 0 5px; background-color: #191f2d"
-    >
-      <Layout3 />
-    </div>
+    <MarginTable />
+    <Footer />
   </div>
-  <MarginTable />
-  <Footer />
 </template>
 
 <script>
@@ -44,6 +46,6 @@ export default defineComponent({
 
 .kolo3 {
   color: white;
-  height: auto;
+background-color: #242d41;
 }
 </style>

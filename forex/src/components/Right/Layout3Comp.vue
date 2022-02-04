@@ -62,13 +62,14 @@
 
   <div class="holdAmont">
     <div class="amountBuy" @click="alert = true">
-      <img
+      <!-- <img
         :src="buy"
         alt="Buy"
         class="Flex row justify-end self-center"
         style="font-size: 6px; margin: 10px 0 0 0; height: 20px"
-      />
-      <p style="margin: 0 0 10px">Buy</p>
+      /> -->
+      <p style="margin:10px 0">Buy</p>
+      <p style="margin: 0 0 10px">32244.655</p>
     </div>
   </div>
   <q-dialog v-model="alert">
@@ -91,13 +92,14 @@
 
   <div class="holdAmont">
     <div class="amountSell" @click="alert = true" label="Alert" color="primary">
-      <img
+      <!-- <img
         :src="sell"
         alt="Sell"
         class="Flex row justify-end self-center"
         style="font-size: 6px; margin: 10px 0 0 0; height: 20px"
-      />
-      <p style="margin: 0 0 10px">Sell</p>
+      /> -->
+      <p style="margin: 0 0 10px; font-size: 15px; margin: 10px 0;">Sell</p>
+      <p style="margin: 0 0 10px">34576.534</p>
     </div>
   </div>
 

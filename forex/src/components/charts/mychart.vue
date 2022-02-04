@@ -1,7 +1,7 @@
 <template>
   <apexchart
     type="candlestick"
-    height="350"
+    height="450"
     :options="chartOptions"
     :series="series"
   ></apexchart>
@@ -261,7 +261,7 @@ export default {
       chartOptions: {
         chart: {
           type: "candlestick",
-          height: 350,
+          height: 30,
         },
         title: {
           text: "CandleStick Chart",
