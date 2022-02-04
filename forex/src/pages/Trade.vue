@@ -1,6 +1,6 @@
 <template>
   <q-page class="flex flex-center">
-    working
+    <h1>Trade Station Page In Progress</h1>
   </q-page>
 </template>
 

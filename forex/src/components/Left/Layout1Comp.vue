@@ -7,13 +7,18 @@
         background-color: #242d41;
       "
     >
+
+      <q-btn to="/Trade">
       <Layout1Icon
         icon="fa fa-tachometer"
         iconName="TRADE"
         iconName2="STATION"
         class="iconsMy"
         @click="IconOne"
+        to="/Trade"
       />
+      </q-btn>
+      <q-btn to="/OrderBook">
       <Layout1Icon
         icon="fa fa-film"
         iconName="ORDER"
@@ -21,6 +26,7 @@
         class="iconsMy"
         @click="IconTwo"
       />
+      </q-btn>
       <Layout1Icon
         icon="fa fa-comments"
         iconName="MARKET"

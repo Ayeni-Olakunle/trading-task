@@ -5,9 +5,14 @@ const routes = [
     children: [{ path: "", component: () => import("pages/Index.vue") }],
   },
   {
-    path: "/tradeStation",
+    path: "/Trade",
     component: () => import("layouts/TradeStation.vue"),
     children: [{ path: "", component: () => import("pages/Trade.vue") }],
+  },
+  {
+    path: "/OrderBook",
+    component: () => import("layouts/OrderBook.vue"),
+    children: [{ path: "", component: () => import("pages/Order.vue") }],
   },
 
   // Always leave this as last one,

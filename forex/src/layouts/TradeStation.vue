@@ -1,6 +1,8 @@
 <template>
   <q-layout view="lHh Lpr lFf">
-    <div>acwdwqdw</div>
+    <q-page class="flex flex-center">
+    <h1>Trade Station Page In Progress</h1>
+  </q-page>
   </q-layout>
 </template>
 
