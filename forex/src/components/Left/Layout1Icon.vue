@@ -57,7 +57,7 @@ export default defineComponent({
 
 <style scoped>
 .holdIcon {
-  background-color: #242d41;
+  /* background-color: #242d41; */
   height: 80px;
   display: flex;
   justify-content: center;
@@ -67,11 +67,11 @@ export default defineComponent({
   padding: 0 5px;
   cursor: pointer;
 }
-.holdIcon .icontext .iconStyle:hover {
+/* .holdIcon .icontext .iconStyle:hover {
   color: white;
   background-color: #322d51;
   transition: 0.5s;
-}
+} */
 
 .whishList {
   width: 100%;
@@ -110,10 +110,10 @@ margin-top: -60px;
 margin-left: 50px;
 }
 
-.holdIcon :hover {
+/* .holdIcon :hover {
   background-color: #3a4156;
-}
-.holdIcon:hover .iconStyle {
+} */
+/* .holdIcon:hover .iconStyle {
   color: white;
 }
 .holdIcon:hover .icontext {
@@ -121,5 +121,5 @@ margin-left: 50px;
 }
 .holdIcon:hover .plum {
   visibility: visible;
-}
+} */
 </style>

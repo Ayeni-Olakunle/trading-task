@@ -9,7 +9,7 @@
     >
 
       <!-- <div> -->
-      <q-btn to="/">
+      <q-btn to="/" style="width: 100%;">
       <Layout1Icon
         icon="fa fa-tachometer"
         iconName="TRADE"
@@ -19,7 +19,7 @@
         to="/Trade"
       />
       </q-btn>
-      <q-ajax-bar to="/OrderBook">
+      <q-btn to="/OrderBook" style="width: 100%;">
       <Layout1Icon
         icon="fa fa-film"
         iconName="ORDER"
@@ -27,15 +27,15 @@
         class="iconsMy"
         @click="IconTwo"
       />
-      </q-ajax-bar>
-      <q-btn to="/OrderBook">
+      </q-btn>
+      <q-btn to="/OrderBook" style="width: 100%;">
       <Layout1Icon
         icon="fa fa-comments"
         iconName="MARKET"
         class="iconsMy"
       />
       </q-btn>
-      <q-btn to="/OrderBook">
+      <q-btn to="/OrderBook" style="width: 100%;">
       <Layout1Icon
         icon="fa fa-cubes"
         iconName="TRADING"
@@ -43,7 +43,7 @@
         class="iconsMy"
       />
       </q-btn>
-      <q-btn to="/TransactionHistory">
+      <q-btn to="/TransactionHistory" style="width: 100%;">
       <Layout1Icon
         icon="fa fa-history"
         iconName="TRANSACTION"
@@ -51,7 +51,7 @@
         class="PROFILE"
       />
       </q-btn>
-      <q-btn to="/UserProfile">
+      <q-btn to="/UserProfile" style="width: 100%;">
       <Layout1Icon
         icon="fa fa-user"
         iconName="PROFILE"
@@ -537,7 +537,7 @@ export default defineComponent({
   display: block;
 }
 
-.iconsMy:hover {
+/* .iconsMy:hover {
   background-color: #3a4156;
-}
+} */
 </style>
