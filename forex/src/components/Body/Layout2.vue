@@ -1,8 +1,8 @@
 
 <template>
-  <q-page>
+  <q-card-section>
     <chartMe />
-  </q-page>
+  </q-card-section>
 </template>
 
 <script>

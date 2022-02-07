@@ -1,15 +1,16 @@
 <template>
-  <div style="display: flex">
-    <div
+  <q-page style="min-height: fit-content; display: flex;">
+    <q-item-section
       style="
         border-right: 1px solid rgb(82, 82, 82);
         width: min-content;
         background-color: #242d41;
+        height: fit-content;
       "
     >
 
       <!-- <div> -->
-      <q-btn to="/" style="width: 100%;">
+      <q-btn to="/" style="width: 100%; padding: 0 !important;" size="0px">
       <Layout1Icon
         icon="fa fa-tachometer"
         iconName="TRADE"
@@ -19,7 +20,7 @@
         to="/Trade"
       />
       </q-btn>
-      <q-btn to="/OrderBook" style="width: 100%;">
+      <q-btn to="/OrderBook" style="width: 100%; padding: 0 !important;">
       <Layout1Icon
         icon="fa fa-film"
         iconName="ORDER"
@@ -28,14 +29,14 @@
         @click="IconTwo"
       />
       </q-btn>
-      <q-btn to="/OrderBook" style="width: 100%;">
+      <q-btn to="/OrderBook" style="width: 100%; padding: 0 !important;">
       <Layout1Icon
         icon="fa fa-comments"
         iconName="MARKET"
         class="iconsMy"
       />
       </q-btn>
-      <q-btn to="/OrderBook" style="width: 100%;">
+      <q-btn to="/OrderBook" style="width: 100%; padding: 0 !important;">
       <Layout1Icon
         icon="fa fa-cubes"
         iconName="TRADING"
@@ -43,7 +44,7 @@
         class="iconsMy"
       />
       </q-btn>
-      <q-btn to="/TransactionHistory" style="width: 100%;">
+      <q-btn to="/TransactionHistory" style="width: 100%; padding: 0 !important;">
       <Layout1Icon
         icon="fa fa-history"
         iconName="TRANSACTION"
@@ -51,7 +52,7 @@
         class="PROFILE"
       />
       </q-btn>
-      <q-btn to="/UserProfile" style="width: 100%;">
+      <q-btn to="/UserProfile" style="width: 100%; padding: 0 !important;">
       <Layout1Icon
         icon="fa fa-user"
         iconName="PROFILE"
@@ -59,7 +60,7 @@
       />
       </q-btn>
       <!-- <Layout1Icon icon="fa fa-ellipsis-h" iconName="MORE" class="iconsMy" /> -->
-    </div>
+    </q-item-section>
 
     <!-- <div
       :class="'portfolioSection' + (sideIcon ? ' sideIconMe' : ' sideIconMe2')"
@@ -347,7 +348,7 @@
         </div>
       </div>
     </div> -->
-  </div>
+  </q-page>
 </template>
 
 <script>

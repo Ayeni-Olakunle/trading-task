@@ -68,7 +68,7 @@
         class="Flex row justify-end self-center"
         style="font-size: 6px; margin: 10px 0 0 0; height: 20px"
       /> -->
-      <p style="margin:10px 0">Buy</p>
+      <p style="margin:5px 0">Buy</p>
       <p style="margin: 0 0 10px">32244.655</p>
     </div>
   </div>
@@ -98,7 +98,7 @@
         class="Flex row justify-end self-center"
         style="font-size: 6px; margin: 10px 0 0 0; height: 20px"
       /> -->
-      <p style="margin: 0 0 10px; font-size: 15px; margin: 10px 0;">Sell</p>
+      <p style="margin: 0 0 10px; font-size: 15px; margin: 5px 0;">Sell</p>
       <p style="margin: 0 0 10px">34576.534</p>
     </div>
   </div>

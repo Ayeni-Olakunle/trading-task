@@ -1,7 +1,7 @@
 <template>
   <q-layout view="lHh Lpr lFf">
     <q-page-container>
-      <HeadMe />
+      <!-- <HeadMe /> -->
       <Body />
       <!-- <router-view /> -->
     </q-page-container>
@@ -9,7 +9,7 @@
 </template>
 
 <script>
-import HeadMe from "pages/Header.vue";
+// import HeadMe from "pages/Header.vue";
 import Body from "pages/Body.vue";
 
 
@@ -19,7 +19,7 @@ export default defineComponent({
   name: "MainLayout",
 
   components: {
-    HeadMe,
+    // HeadMe,
     Body,
   },
 });

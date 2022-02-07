@@ -1,5 +1,5 @@
 <template>
-  <div class="holdIcon" @click="alert = true" label="Alert" color="primary">
+  <q-item-section class="holdIcon" @click="alert = true" label="Alert" color="primary">
     <i class="fa fa-plus plum"></i>
     <div style="line-height: 1">
       <q-icon :name="icon" class="iconStyle" /><br />
@@ -7,7 +7,7 @@
       <span class="icontext">{{ iconName2 }}</span>
     </div>
     <div></div>
-  </div>
+  </q-item-section>
   <!-- <q-dialog v-model="alert">
     <q-card>
       <q-card-section>
@@ -58,7 +58,7 @@ export default defineComponent({
 <style scoped>
 .holdIcon {
   /* background-color: #242d41; */
-  height: 80px;
+  height: 70px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -86,7 +86,7 @@ export default defineComponent({
 }
 
 .iconStyle {
-  font-size: 22px;
+  font-size: 20px;
   margin: 5px 0px;
   color: #b5b5b5;
 }
