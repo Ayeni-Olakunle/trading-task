@@ -30,11 +30,11 @@
 
 <script>
 import { defineComponent } from "vue";
-import Footer from "./Footer/Footer.vue";
-import MarginTable from "./MarginTable/MarginTable.vue";
-import Layout3 from "./Body/Layout3.vue";
-import Layout2 from "./Body/Layout2.vue";
-import Layout1 from "./Body/Layout1.vue";
+import Footer from "../components/Footer/Footer.vue";
+import MarginTable from "../components/MarginTable/MarginTable.vue";
+import Layout3 from "../components/Body/Layout3.vue";
+import Layout2 from "../components/Body/Layout2.vue";
+import Layout1 from "../components/Body/Layout1.vue";
 import HeadMe from "pages/Header.vue";
 export default defineComponent({
   name: "Body",

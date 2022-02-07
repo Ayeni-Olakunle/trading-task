@@ -22,9 +22,9 @@
 
 <script>
 import { defineComponent } from "vue";
-import Footer from "./Footer/Footer.vue";
-import MarginTable from "./MarginTable/MarginTable.vue";
-import Layout1 from "./Body/Layout1.vue";
+import Footer from "../components/Footer/Footer.vue";
+import MarginTable from "../components/MarginTable/MarginTable.vue";
+import Layout1 from "../components/Body/Layout1.vue";
 import HeadMe from "./Header.vue";
 import OrderBookCom from "../components/OrderBook/OB-Layout1.vue"
 export default defineComponent({

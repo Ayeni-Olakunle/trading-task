@@ -8,7 +8,7 @@
 <script>
 import { defineComponent, defineAsyncComponent } from "vue";
 const chartMe = defineAsyncComponent(() =>
-  import("components/charts/mychart.vue")
+  import("../charts/mychart.vue")
 );
 export default defineComponent({
   name: "Layout2",

@@ -13,8 +13,8 @@
 
 <script>
 import { defineComponent } from "vue";
-import Layout1 from "./Header/Layout1.vue";
-import Layout2 from "./Header/Layout2.vue";
+import Layout1 from "../components/Header/Layout1.vue"
+import Layout2 from "../components/Header/Layout2.vue"
 export default defineComponent({
   name: "HeadMe",
   components: {
