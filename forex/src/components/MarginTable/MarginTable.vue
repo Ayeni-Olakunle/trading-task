@@ -10,7 +10,7 @@
     </div>
     <div>
       <div style="width: 100%" :class="maTableMe ? '' : 'high'">
-        <div
+        <!-- <div
           style="
             color: #989898;
             display: flex;
@@ -33,8 +33,8 @@
           <p style="width: 6rem; margin-bottom: 0">Swap</p>
           <p style="width: 9rem; margin-bottom: 0">Net/PL</p>
           <p></p>
-        </div>
-        <div class="marginFlex">
+        </div> -->
+        <!-- <div class="marginFlex">
           <TableTrade
             bit="fa fa-bitcoin"
             coinName="Bitcoin"
@@ -47,21 +47,10 @@
             Swap="$0.02"
             NetPL="-$1.42"
           />
-        </div>
-        <div class="marginFlex">
-          <TableTrade
-            bit="fa fa-bitcoin"
-            coinName="Bitcoin"
-            Quantity="0.001"
-            Margin="0.41"
-            Open="345432.785"
-            CurrentPrice="2334346"
-            TakeProfit="Add"
-            StopLoss="Add"
-            Swap="$0.02"
-            NetPL="-$1.42"
-          />
-        </div>
+        </div> -->
+        <!-- <div class="marginFlex"> -->
+        <TableTrade />
+        <!-- </div> -->
       </div>
     </div>
     <div class="holdColseB backGroundF">
