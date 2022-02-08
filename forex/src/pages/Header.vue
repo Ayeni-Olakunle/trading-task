@@ -1,6 +1,13 @@
 <template>
   <div class="q-pa-md headerBack">
-    <div class="row" style="padding: 5px 0px;border-bottom: 1px solid rgb(82, 82, 82);">
+    <div
+      class="row"
+      style="
+        padding: 5px 0px;
+        border-bottom: 1px solid rgb(82, 82, 82);
+        height: 11.9vh;
+      "
+    >
       <div class="col-7">
         <Layout1 />
       </div>
@@ -13,8 +20,8 @@
 
 <script>
 import { defineComponent } from "vue";
-import Layout1 from "../components/Header/Layout1.vue"
-import Layout2 from "../components/Header/Layout2.vue"
+import Layout1 from "../components/Header/Layout1.vue";
+import Layout2 from "../components/Header/Layout2.vue";
 export default defineComponent({
   name: "HeadMe",
   components: {
