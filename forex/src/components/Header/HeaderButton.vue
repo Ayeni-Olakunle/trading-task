@@ -2,15 +2,19 @@
   <!-- <div class="butinMe" :class="active == 'true' ? 'act' : ''">
     <span>{{ title }}</span>
   </div> -->
-  <div class="current actO" :class="active == 'true' ? 'act2' : ''">
-    <i class="fa fa-close" style="margin-right: 5px;color: rgb(159, 159, 159);"></i>
+  <!-- <q-btn dense round flat icon="email">
+    <q-badge color="red" floating transparent> 4 </q-badge>
+  </q-btn> -->
+
+  <q-btn class="current actO" :class="active == 'true' ? 'act2' : ''">
+    <q-icon name="fa fa-close" class="closeTrad" size="0.9rem" color="grey-6" />
     <div class="imageMe"></div>
     <div style="font-size: 12px">
       <span>{{ title }}</span
       ><br />
       <span style="color: rgb(82, 82, 82)">Binary</span>
     </div>
-  </div>
+  </q-btn>
 </template>
 
 <script>
@@ -79,5 +83,11 @@ export default defineComponent({
 .actO:hover {
   border-bottom: 1px solid orange;
   background-color: #353c4d;
+}
+
+.closeTrad {
+  font-size: 0.9rem;
+  margin-top: -35px;
+  margin-left: -7px;
 }
 </style>

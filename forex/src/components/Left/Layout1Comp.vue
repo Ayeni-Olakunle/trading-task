@@ -1,5 +1,5 @@
 <template>
-  <q-page style="min-height: fit-content; display: flex;">
+  <q-page style="min-height: fit-content; display: flex">
     <q-item-section
       style="
         border-right: 1px solid rgb(82, 82, 82);
@@ -8,56 +8,50 @@
         height: fit-content;
       "
     >
-
       <!-- <div> -->
-      <q-btn to="/" style="width: 100%; padding: 0 !important;" size="0px">
-      <Layout1Icon
-        icon="fa fa-tachometer"
-        iconName="TRADE"
-        iconName2="STATION"
-        class="iconsMy"
-        @click="IconOne"
-        to="/Trade"
-      />
+      <q-btn to="/" style="width: 100%; padding: 0 !important" size="0px">
+        <Layout1Icon
+          icon="fa fa-tachometer"
+          iconName="TRADE"
+          iconName2="STATION"
+          class="iconsMy"
+          @click="IconOne"
+          to="/Trade"
+        />
       </q-btn>
-      <q-btn to="/OrderBook" style="width: 100%; padding: 0 !important;">
-      <Layout1Icon
-        icon="fa fa-film"
-        iconName="ORDER"
-        iconName2="BOOK"
-        class="iconsMy"
-        @click="IconTwo"
-      />
+      <q-btn to="/OrderBook" style="width: 100%; padding: 0 !important">
+        <Layout1Icon
+          icon="fa fa-film"
+          iconName="ORDER"
+          iconName2="BOOK"
+          class="iconsMy"
+          @click="IconTwo"
+        />
       </q-btn>
-      <q-btn to="/OrderBook" style="width: 100%; padding: 0 !important;">
-      <Layout1Icon
-        icon="fa fa-comments"
-        iconName="MARKET"
-        class="iconsMy"
-      />
+      <q-btn to="/OrderBook" style="width: 100%; padding: 0 !important">
+        <Layout1Icon icon="fa fa-comments" iconName="MARKET" class="iconsMy" />
       </q-btn>
-      <q-btn to="/OrderBook" style="width: 100%; padding: 0 !important;">
-      <Layout1Icon
-        icon="fa fa-cubes"
-        iconName="TRADING"
-        iconName2="PLAN"
-        class="iconsMy"
-      />
+      <q-btn to="/OrderBook" style="width: 100%; padding: 0 !important">
+        <Layout1Icon
+          icon="fa fa-cubes"
+          iconName="TRADING"
+          iconName2="PLAN"
+          class="iconsMy"
+        />
       </q-btn>
-      <q-btn to="/TransactionHistory" style="width: 100%; padding: 0 !important;">
-      <Layout1Icon
-        icon="fa fa-history"
-        iconName="TRANSACTION"
-        iconName2="HISTORY"
-        class="PROFILE"
-      />
+      <q-btn
+        to="/TransactionHistory"
+        style="width: 100%; padding: 0 !important"
+      >
+        <Layout1Icon
+          icon="fa fa-history"
+          iconName="TRANSACTION"
+          iconName2="HISTORY"
+          class="PROFILE"
+        />
       </q-btn>
-      <q-btn to="/UserProfile" style="width: 100%; padding: 0 !important;">
-      <Layout1Icon
-        icon="fa fa-user"
-        iconName="PROFILE"
-        class="iconsMy"
-      />
+      <q-btn to="/UserProfile" style="width: 100%; padding: 0 !important">
+        <Layout1Icon icon="fa fa-user" iconName="PROFILE" class="iconsMy" />
       </q-btn>
       <!-- <Layout1Icon icon="fa fa-ellipsis-h" iconName="MORE" class="iconsMy" /> -->
     </q-item-section>
@@ -388,6 +382,7 @@ export default defineComponent({
 </script>
 
 <style scoped>
+@import "../../css/MobileResponsive.css";
 .whishList {
   width: 100%;
   /* background-color: #322d51; */

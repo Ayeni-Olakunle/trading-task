@@ -1,6 +1,6 @@
 <template>
   <div class="holdAll">
-    <HeadMe style="height: 11.9vh" />
+    <HeadMe class="orderHead" />
     <div class="row" style="justify-content: space-between">
       <div class="col-1 kolo3">
         <Layout1 />
@@ -48,6 +48,7 @@ export default defineComponent({
 </script>
 
 <style scoped>
+@import "../css/MobileResponsive.css";
 .headerBack {
   padding: 0;
   background-color: #191f2d;
@@ -56,5 +57,9 @@ export default defineComponent({
 .kolo3 {
   color: white;
   background-color: #242d41;
+}
+
+.orderHead {
+  height: 11.9vh;
 }
 </style>

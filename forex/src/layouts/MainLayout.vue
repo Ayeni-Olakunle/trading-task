@@ -12,7 +12,6 @@
 // import HeadMe from "pages/Header.vue";
 import Body from "pages/Body.vue";
 
-
 import { defineComponent, ref } from "vue";
 
 export default defineComponent({

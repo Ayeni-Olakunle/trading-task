@@ -1,19 +1,15 @@
 <template>
   <div class="q-pa-md headerBack">
-    <div
-      class="row"
-      style="
-        padding: 5px 0px;
-        border-bottom: 1px solid rgb(82, 82, 82);
-        height: 11.9vh;
-      "
-    >
-      <div class="col-7">
-        <Layout1 />
-      </div>
-      <div class="col-5">
-        <Layout2 />
-      </div>
+    <div class="highOne">
+      <q-bar class="headerQ">
+        <div>
+          <Layout1 />
+        </div>
+        <q-space />
+        <div>
+          <Layout2 />
+        </div>
+      </q-bar>
     </div>
   </div>
 </template>
@@ -32,8 +28,19 @@ export default defineComponent({
 </script>
 
 <style scoped>
+@import "../css/MobileResponsive.css";
 .headerBack {
   padding: 0;
   background-color: #191f2d;
+}
+
+.headerQ {
+  padding: 20px;
+}
+
+.highOne {
+  padding: 5px 0px;
+  border-bottom: 1px solid rgb(82, 82, 82);
+  height: 11.9vh;
 }
 </style>

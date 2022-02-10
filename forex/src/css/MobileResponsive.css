@@ -1,0 +1,116 @@
+@media only screen and (max-width: 1096px) {
+  .IQoptionImg {
+    width: 30px !important;
+    height: 30px !important;
+    margin-left: 10px !important;
+    margin-left: 10px;
+  }
+
+  .IQ {
+    font-size: 15px !important;
+  }
+
+  .imageMe {
+    width: 25px !important;
+    height: 25px !important;
+  }
+
+  .closeTrad {
+    font-size: 0.7rem !important;
+    margin-top: -30px !important;
+  }
+
+  .current {
+    height: 40px !important;
+  }
+
+  .adding {
+    padding: 0 9px !important;
+    height: 40px !important;
+  }
+
+  .imagePro {
+    width: 30px !important;
+    height: 30px !important;
+    font-size: 12px !important;
+  }
+
+  .depositeBut {
+    padding: 1px 7px !important;
+    font-size: 13px !important;
+  }
+  .depoAmont {
+    font-size: 15px !important;
+  }
+  .prac {
+    font-size: 8px !important;
+  }
+
+  .holdIcon {
+    height: 60px !important;
+  }
+
+  .icontext {
+    font-size: 7px !important;
+  }
+
+  .iconStyle {
+    font-size: 15px !important;
+  }
+  .highOne {
+    height: auto !important;
+  }
+  .headHigh {
+    height: auto !important;
+  }
+
+  .holdHeaderOne {
+    margin-top: -10px !important;
+  }
+  .LayTwo {
+    display: none !important;
+  }
+  .LayTwo2 {
+    display: block !important;
+  }
+  .holdAll2 {
+    display: none;
+  }
+  .holdAllMe {
+    display: block !important;
+  }
+  .headHigh {
+    height: 6.3vh !important;
+  }
+
+  .orderHead {
+    height: auto !important;
+  }
+}
+
+@media only screen and (max-width: 880px) {
+  .tradeList {
+    display: none !important;
+  }
+  .small {
+    display: block !important;
+  }
+
+  .icontext {
+    font-size: 5px !important;
+  }
+
+  .iconStyle {
+    font-size: 10px !important;
+  }
+
+  .holdIcon {
+    height: 50px !important;
+  }
+  .highOne {
+    height: auto !important;
+  }
+  .headHigh {
+    height: auto !important;
+  }
+}

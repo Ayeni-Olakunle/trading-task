@@ -225,6 +225,7 @@ export default defineComponent({
   text-align: center;
   position: absolute;
   bottom: 13%;
+  padding-bottom: 20px;
 }
 
 .add {

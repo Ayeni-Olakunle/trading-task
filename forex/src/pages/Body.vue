@@ -1,7 +1,7 @@
 <template>
-  <div class="holdAll">
+  <div class="holdAll2">
     <div class="row">
-      <div class="col-12" style="height: 11.3vh">
+      <div class="col-12 headHigh">
         <HeadMe />
       </div>
     </div>
@@ -18,6 +18,32 @@
       >
         <Layout3 />
       </div>
+    </div>
+    <div class="col-12" style="background-color: rgb(36, 45, 65); height: 13vh">
+      <MarginTable />
+      <Footer />
+    </div>
+  </div>
+
+  <div class="holdAll holdAllMe">
+    <div class="row">
+      <div class="col-12 headHigh">
+        <HeadMe />
+      </div>
+    </div>
+    <div class="row" style="justify-content: space-between">
+      <div class="col-1 kolo3">
+        <Layout1 />
+      </div>
+      <div class="col-11" style="background-color: white; height: 75vh">
+        <Layout2 />
+      </div>
+      <!-- <div
+        class="col-1 kolo3"
+        style="padding: 0 5px 0 5px; background-color: #191f2d"
+      >
+        <Layout3 />
+      </div> -->
     </div>
     <div class="col-12" style="background-color: rgb(36, 45, 65); height: 13vh">
       <MarginTable />
@@ -48,6 +74,7 @@ export default defineComponent({
 </script>
 
 <style scoped>
+@import "../css/MobileResponsive.css";
 .headerBack {
   padding: 0;
   background-color: #191f2d;
@@ -64,9 +91,17 @@ export default defineComponent({
   background-color: #191f2d;
 }
 
-html,
-body {
-  margin: 0px;
+.holdAll2 {
   height: 100%;
+  overflow: hidden;
+  background-color: white;
+}
+
+.headHigh {
+  height: 11.3vh;
+}
+
+.holdAllMe {
+  display: none;
 }
 </style>

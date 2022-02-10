@@ -1,9 +1,15 @@
 <template>
-  <q-item-section class="holdIcon" @click="alert = true" label="Alert" color="primary">
+  <q-item-section
+    class="holdIcon"
+    @click="alert = true"
+    label="Alert"
+    color="primary"
+  >
     <i class="fa fa-plus plum"></i>
     <div style="line-height: 1">
       <q-icon :name="icon" class="iconStyle" /><br />
-      <span class="icontext">{{ iconName }}</span><br/>
+      <span class="icontext">{{ iconName }}</span
+      ><br />
       <span class="icontext">{{ iconName2 }}</span>
     </div>
     <div></div>
@@ -56,6 +62,7 @@ export default defineComponent({
 </script>
 
 <style scoped>
+@import "../../css/MobileResponsive.css";
 .holdIcon {
   /* background-color: #242d41; */
   height: 70px;
@@ -93,21 +100,21 @@ export default defineComponent({
 
 .plum {
   position: absolute;
-z-index: 1;
-/* left: 5%; */
-background-color: #4a5571;
-width: 15px;
-border-radius: 50px;
-height: 15px;
-display: flex;
-justify-content: center;
-align-items: center;
-color: #b5b5b5;
-font-size: 12px;
-visibility: hidden;
-margin-top: -60px;
-/* top: 15%; */
-margin-left: 50px;
+  z-index: 1;
+  /* left: 5%; */
+  background-color: #4a5571;
+  width: 15px;
+  border-radius: 50px;
+  height: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #b5b5b5;
+  font-size: 12px;
+  visibility: hidden;
+  margin-top: -60px;
+  /* top: 15%; */
+  margin-left: 50px;
 }
 
 /* .holdIcon :hover {

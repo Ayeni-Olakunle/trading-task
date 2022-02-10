@@ -1,17 +1,14 @@
 <template>
-  <div
-    class="q-pa-md Flex row justify-end .self-center"
-    style="padding: 5px 16px; align-items: center"
-  >
+  <div class="q-pa-md Flex row justify-end .self-center LayTwo">
     <div class="HoldPro" @click="photo = !photo">
-      <div>
-        <i class="fa fa-camera imagePro"></i>
-      </div>
-      <i
-        class="fa fa-caret-down Flex row justify-end self-center"
+      <q-icon name="fa fa-camera" class="imagePro" />
+      <q-icon
+        name="fa fa-caret-down"
+        class="Flex row justify-end self-center"
         style="font-size: 15px; color: #9a9ea6"
-      ></i>
+      />
     </div>
+
     <div :class="'cameraDrop ' + (photo ? 'cameraDropDIs' : '')">
       <div style="display: flex">
         <div class="cameraDropFirst">
@@ -52,81 +49,86 @@
         </div>
         <div class="cameraDropSecond">
           <div class="holdPhotoIcon">
-            <i
-              class="fa fa-camera"
+            <q-icon
+              name="fa fa-camera"
               style="font-size: 17px; margin-right: 10px"
-            ></i>
+            />
             <span>Upload Photo</span>
           </div>
           <div class="holdPhotoIcon">
-            <i
-              class="fa fa-edit"
+            <q-icon
+              name="fa fa-edit"
               style="font-size: 17px; margin-right: 10px"
-            ></i>
+              color="grey-6"
+            />
             <span>Personal Data</span>
           </div>
-          <div class="holdPhotoIcon">
-            <i
+          <q-btn class="holdPhotoIcon">
+            <!-- <q-icon name="fa fa-plus-circleedit" size="0.9rem" color="grey-6" /> -->
+            <!-- <i
               class="fa fa-plus-circle"
               style="font-size: 17px; margin-right: 10px"
-            ></i>
+            ></i> -->
             <span>Deposit</span>
-          </div>
+          </q-btn>
           <div class="holdPhotoIcon">
-            <i
-              class="fa fa-dollar"
+            <q-icon
+              name="fa fa-dollar"
               style="font-size: 17px; margin-right: 10px"
-            ></i>
+            />
             <span>Withdraw Funds</span>
           </div>
           <div class="holdPhotoIcon">
-            <i
-              class="fa fa-question-circle"
+            <q-icon
+              name="fa fa-question-circle"
               style="font-size: 17px; margin-right: 10px"
-            ></i>
+            />
             <span>Contract Support</span>
           </div>
           <div class="holdPhotoIcon">
-            <i
-              class="fa fa-refresh"
+            <q-icon
+              name="fa fa-refresh"
               style="font-size: 17px; margin-right: 10px"
-            ></i>
+            />
             <span>Balance History</span>
           </div>
           <div class="holdPhotoIcon">
-            <i
-              class="fa fa-history"
+            <q-icon
+              name="fa fa-history"
               style="font-size: 17px; margin-right: 10px"
-            ></i>
+            />
             <span>Trading History</span>
           </div>
           <div class="holdPhotoIcon">
-            <i
-              class="fa fa-gear"
+            <q-icon
+              name="fa fa-gear"
               style="font-size: 17px; margin-right: 10px"
-            ></i>
+            />
             <span>Settings</span>
           </div>
           <div class="holdPhotoIcon" style="border-top: 1px solid gray">
-            <i
-              class="fa fa-sign-out"
+            <q-icon
+              name="fa fa-gear"
               style="font-size: 17px; margin-right: 10px"
-            ></i>
+            />
             <span>Log Out</span>
           </div>
         </div>
       </div>
     </div>
+
     <div class="depoAmont" style="cursor: pointer" @click="status = !status">
       <span
         >$56,260.2
-        <i
-          class="fa fa-caret-down Flex justify-end self-center"
+        <q-icon
+          name="fa fa-caret-down"
+          class="Flex justify-end self-center"
           style="font-size: 10px"
-        ></i
-      ></span>
-      <span style="font-size: 11px">PRACTICE ACCOUNT</span>
+        />
+      </span>
+      <span class="prac">PRACTICE ACCOUNT</span>
     </div>
+
     <div :class="'subchild ' + (status ? '' : 'active')">
       <div class="moneyBox">
         <h6 class="topText">Practice Account</h6>
@@ -198,15 +200,39 @@
         </div>
       </div>
     </div>
-    <div
-      class="depositeBut"
-      @click="alert = true"
-      label="Alert"
-      color="primary"
-    >
-      <i class="fa fa-refresh" style="font-size: 15px; margin-right: 10px"></i>
+    <q-btn class="depositeBut" @click="alert = true">
+      <q-icon
+        name="fa fa-refresh"
+        size="0.9rem"
+        class="q-pa-sm"
+        color="#67f267"
+      />
       Deposit
-    </div>
+    </q-btn>
+  </div>
+
+  <div class="q-pa-md small LayTwo2">
+    <q-btn-dropdown color="#363d50" dropdown-icon="fa fa-bars">
+      <q-list>
+        <q-item clickable v-close-popup @click="onItemClick">
+          <q-item-section>
+            <q-item-label @click="photo = !photo">Status</q-item-label>
+          </q-item-section>
+        </q-item>
+
+        <q-item clickable v-close-popup @click="onItemClick">
+          <q-item-section>
+            <q-item-label>Amount</q-item-label>
+          </q-item-section>
+        </q-item>
+
+        <q-item clickable v-close-popup @click="onItemClick">
+          <q-item-section>
+            <q-item-label>Deposit</q-item-label>
+          </q-item-section>
+        </q-item>
+      </q-list>
+    </q-btn-dropdown>
   </div>
 
   <q-dialog v-model="alert">
@@ -214,7 +240,12 @@
       <q-card-section class="dialogHead">
         <div class="text-h6" style="font-size: 12px">Make a Deposit</div>
         <div class="text-h6" style="font-size: 12px; cursor: pointer">
-          <i class="fa fa-close" v-close-popup style="color: gray"></i>
+          <q-icon
+            name="fa fa-close"
+            class="closeTrad"
+            size="0.9rem"
+            color="grey-6"
+          />
         </div>
       </q-card-section>
       <q-card-section class="q-pt-none">
@@ -273,9 +304,13 @@ export default defineComponent({
   name: "Layout2",
   setup() {
     return {
+      onItemClick() {
+        console.log("Clicked on an Item");
+      },
       alert: ref(false),
     };
   },
+
   data() {
     return {
       status: false,
@@ -286,6 +321,7 @@ export default defineComponent({
 </script>
 
 <style scoped>
+@import "../../css/MobileResponsive.css";
 .depositeBut {
   color: #67f267;
   border: 1px solid #67f267;
@@ -402,6 +438,7 @@ export default defineComponent({
   height: 270px;
   display: flex;
   justify-content: space-between;
+  z-index: 1;
 }
 
 .moneyBox {
@@ -477,6 +514,7 @@ export default defineComponent({
 }
 .cameraDropDIs {
   display: block;
+  z-index: 1;
 }
 
 .cameraDropFirst {
@@ -511,5 +549,17 @@ export default defineComponent({
 
 .depoAmont:hover {
   color: #c25a00;
+}
+
+.prac {
+  font-size: 11px;
+}
+.LayTwo {
+  padding: 5px 16px;
+  align-items: center;
+  /* display: block; */
+}
+.LayTwo2 {
+  display: none;
 }
 </style>
