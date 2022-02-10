@@ -6,7 +6,7 @@
     color="primary"
   >
     <i class="fa fa-plus plum"></i>
-    <div style="line-height: 1">
+    <div style="line-height: 0.5">
       <q-icon :name="icon" class="iconStyle" /><br />
       <span class="icontext">{{ iconName }}</span
       ><br />
@@ -115,6 +115,10 @@ export default defineComponent({
   margin-top: -60px;
   /* top: 15%; */
   margin-left: 50px;
+}
+
+.q-bar {
+  background: rgb(25 31 45);
 }
 
 /* .holdIcon :hover {

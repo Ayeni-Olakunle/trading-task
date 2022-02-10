@@ -11,8 +11,12 @@
           <span>+</span>
         </div>
       </div>
-      <div class="q-pa-md small">
-        <q-btn-dropdown color="#363d50" dropdown-icon="fa fa-windows">
+      <div class="q-pa-md small" style="margin-top: 10px">
+        <q-btn-dropdown
+          color="#363d50"
+          class="chaNColo"
+          dropdown-icon="fa fa-plus"
+        >
           <q-list style="background-color: #37444f">
             <q-item clickable v-close-popup @click="onItemClick">
               <q-item-section>
@@ -124,7 +128,26 @@ export default defineComponent({
   transition: color 0.3s, background-color 0.3s;
 }
 
+.q-list {
+  background-color: rgb(25 31 45);
+}
+.q-item__label {
+  line-height: 1.2em !important;
+  max-width: 100%;
+  color: white;
+}
 .small {
   display: none;
+}
+
+.chaNColo {
+  background-color: #242d41;
+  box-shadow: none;
+  border-bottom: 1px solid #151a25;
+}
+.q-btn:before {
+  box-shadow: none;
+  background: #242d41;
+  border-bottom: 1px solid #151a25;
 }
 </style>

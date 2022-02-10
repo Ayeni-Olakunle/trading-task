@@ -35,7 +35,7 @@
       <div class="col-1 kolo3">
         <Layout1 />
       </div>
-      <div class="col-11" style="background-color: white; height: 75vh">
+      <div class="col-11 middleHigh">
         <Layout2 />
       </div>
       <!-- <div
@@ -82,7 +82,7 @@ export default defineComponent({
 
 .kolo3 {
   color: white;
-  background-color: #242d41;
+  background-color: #191f2d;
 }
 
 .holdAll {
@@ -103,5 +103,10 @@ export default defineComponent({
 
 .holdAllMe {
   display: none;
+}
+
+.middleHigh {
+  background-color: white;
+  height: 75vh;
 }
 </style>

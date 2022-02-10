@@ -4,7 +4,7 @@
       <div class="margin">
         <span>Margin (2) <span class="marginText">-$0.25</span></span>
       </div>
-      <div style="color: #9197a7; cursor: pointer" @click="tog">
+      <div @click="tog" class="thug">
         Show position <i class="fa fa-angle-down"></i>
       </div>
     </div>
@@ -109,6 +109,7 @@ export default defineComponent({
 </script>
 
 <style scoped>
+@import "../../css/MobileResponsive.css";
 .holdMargin {
   background-color: #242d41;
   display: flex;
@@ -130,6 +131,9 @@ export default defineComponent({
   font-weight: bold;
 }
 
+.q-bar {
+  background: rgb(25 31 45) !important;
+}
 .holdColseB {
   display: flex;
   justify-content: space-between;
@@ -201,5 +205,10 @@ export default defineComponent({
   align-items: center;
   font-size: 10px;
   color: #b5b5b5;
+}
+
+.thug {
+  color: #9197a7;
+  cursor: pointer;
 }
 </style>

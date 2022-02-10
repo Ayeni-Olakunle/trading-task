@@ -9,7 +9,7 @@
       "
     >
       <!-- <div> -->
-      <q-btn to="/" style="width: 100%; padding: 0 !important" size="0px">
+      <q-btn to="/" style="width: 100%; padding: 0 !important">
         <Layout1Icon
           icon="fa fa-tachometer"
           iconName="TRADE"
@@ -45,7 +45,7 @@
       >
         <Layout1Icon
           icon="fa fa-history"
-          iconName="TRANSACTION"
+          iconName="Trade"
           iconName2="HISTORY"
           class="PROFILE"
         />
@@ -521,7 +521,9 @@ export default defineComponent({
 .sideIconMe {
   display: none;
 }
-
+.q-bar {
+  background: rgb(25 31 45);
+}
 .sideIconMe2 {
   display: block;
 }

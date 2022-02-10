@@ -34,6 +34,7 @@ export default defineComponent({
 </script>
 
 <style scoped>
+@import "../../css/MobileResponsive.css";
 .holdFooter {
   background-color: #363d50;
   display: flex;

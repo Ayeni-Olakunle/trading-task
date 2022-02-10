@@ -185,6 +185,8 @@ export default defineComponent({
 </script>
 
 <style scoped>
+@import "../../css/MobileResponsive.css";
+
 .marLeft {
   margin: 0 10px;
   background-color: #ff8b2a;
@@ -241,5 +243,9 @@ export default defineComponent({
   background-color: #ff7800;
   border-radius: 50px;
   color: white;
+}
+
+th {
+  white-space: nowrap;
 }
 </style>

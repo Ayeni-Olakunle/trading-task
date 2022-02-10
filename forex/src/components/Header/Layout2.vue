@@ -214,15 +214,15 @@
   <div class="q-pa-md small LayTwo2">
     <q-btn-dropdown color="#363d50" dropdown-icon="fa fa-bars">
       <q-list>
-        <q-item clickable v-close-popup @click="onItemClick">
+        <q-item clickable v-close-popup @click="photo = !photo">
           <q-item-section>
-            <q-item-label @click="photo = !photo">Status</q-item-label>
+            <q-item-label>Status</q-item-label>
           </q-item-section>
         </q-item>
 
         <q-item clickable v-close-popup @click="onItemClick">
           <q-item-section>
-            <q-item-label>Amount</q-item-label>
+            <q-item-label>Balance</q-item-label>
           </q-item-section>
         </q-item>
 
@@ -557,9 +557,11 @@ export default defineComponent({
 .LayTwo {
   padding: 5px 16px;
   align-items: center;
+  margin-top: 13px;
   /* display: block; */
 }
 .LayTwo2 {
   display: none;
+  margin-right: -26px;
 }
 </style>
