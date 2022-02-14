@@ -44,7 +44,7 @@ export default defineComponent({
 .highOne {
   padding: 5px 0px;
   border-bottom: 1px solid rgb(82, 82, 82);
-  height: 11.9vh;
+  height: 12vh;
   display: flex;
   justify-content: space-between;
   align-items: center;
