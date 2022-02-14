@@ -7,11 +7,7 @@
       </div>
       <div
         class="col-11"
-        style="
-          background-color: rgb(36, 45, 65);
-          height: 78vh;
-          overflow-y: scroll;
-        "
+        style="background-color: rgb(36, 45, 65); height: 78vh"
       >
         <TradePlans />
       </div>
@@ -70,11 +66,5 @@ export default defineComponent({
 .row > .col-xs-1 {
   height: auto;
   width: 5.333%;
-}
-
-.row > .col-11,
-.row > .col-xs-11 {
-  height: auto;
-  width: 94.6667%;
 }
 </style>

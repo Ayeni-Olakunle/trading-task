@@ -5,11 +5,11 @@
         <HeadMe />
       </div>
     </div>
-    <div class="row" style="justify-content: space-between">
+    <div class="row" style="justify-content: space-between; height: 77vh">
       <div class="col-1 kolo3">
         <Layout1 />
       </div>
-      <div class="col-10" style="background-color: white; height: 75vh">
+      <div class="col-10" style="background-color: white; height: 77vh">
         <Layout2 />
       </div>
       <div

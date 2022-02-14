@@ -37,6 +37,8 @@ export default defineComponent({
 .headerQ {
   padding: 20px;
   width: 100%;
+  width: 100%;
+  background: #191f2d;
 }
 
 .highOne {
