@@ -4,7 +4,7 @@
       <h4 class="AccountPlans">Account Plans</h4>
     </div>
     <div class="row">
-      <div class="col-3">
+      <div class="col-3" style="margin-bottom: 15px">
         <div class="holdPackage">
           <h5 class="fontH5">Mini</h5>
           <div class="holdMoney">
@@ -17,7 +17,7 @@
           <q-btn class="btnActive" label="Active" />
         </div>
       </div>
-      <div class="col-3">
+      <div class="col-3" style="margin-bottom: 15px">
         <div class="holdPackage">
           <h5 class="fontH5">Silver</h5>
           <div class="holdMoney">
@@ -32,7 +32,7 @@
         </div>
       </div>
 
-      <div class="col-3">
+      <div class="col-3" style="margin-bottom: 15px">
         <div class="holdPackage">
           <h5 class="fontH5">GOLD</h5>
           <div class="holdMoney">
@@ -51,7 +51,7 @@
         </div>
       </div>
 
-      <div class="col-3">
+      <div class="col-3" style="margin-bottom: 15px">
         <div class="holdPackage">
           <h5 class="fontH5">PLATINUM</h5>
           <div class="holdMoney">
@@ -68,7 +68,7 @@
           <q-btn class="btnJoin" label="JOIN PLAN" />
         </div>
       </div>
-      <div class="col-3">
+      <div class="col-3" style="margin-bottom: 15px">
         <div class="holdPackage">
           <h5 class="fontH5">DIAMOND</h5>
           <div class="holdMoney">
@@ -86,7 +86,7 @@
         </div>
       </div>
 
-      <div class="col-3">
+      <div class="col-3" style="margin-bottom: 15px">
         <div class="holdPackage">
           <h5 class="fontH5">BRONZE</h5>
           <div class="holdMoney">
@@ -143,6 +143,7 @@ export default defineComponent({
   color: #747d9e;
   border-radius: 5px;
   margin: 0 10px;
+  height: 100%;
 }
 
 .fontH5 {
