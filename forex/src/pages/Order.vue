@@ -59,9 +59,9 @@ export default defineComponent({
   background-color: #242d41;
 }
 
-.orderHead {
+/* .orderHead {
   height: 9vh;
-}
+} */
 
 .row > .col-1,
 .row > .col-xs-1 {

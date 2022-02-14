@@ -22,6 +22,11 @@ const routes = [
     ],
   },
   {
+    path: "/TradingPlan",
+    component: () => import("layouts/TradingPlan.vue"),
+    children: [{ path: "", component: () => import("pages/Trading.vue") }],
+  },
+  {
     path: "/UserProfile",
     component: () => import("layouts/UserProfile.vue"),
     children: [{ path: "", component: () => import("pages/UserProfile.vue") }],

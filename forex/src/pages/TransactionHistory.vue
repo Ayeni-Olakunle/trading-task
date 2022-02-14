@@ -59,12 +59,17 @@ export default defineComponent({
   background-color: #242d41;
 }
 
-.orderHead {
+/* .orderHead {
   height: 9vh;
-}
+} */
 .row > .col-1,
 .row > .col-xs-1 {
   height: auto;
   width: 5.333%;
+}
+.row > .col-11,
+.row > .col-xs-11 {
+  height: auto;
+  width: 94.6667%;
 }
 </style>

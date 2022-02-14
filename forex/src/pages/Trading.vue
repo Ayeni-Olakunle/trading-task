@@ -1,15 +1,19 @@
 <template>
   <div class="holdAll">
-    <HeadMe />
+    <HeadMe class="orderHead" />
     <div class="row" style="justify-content: space-between">
       <div class="col-1 kolo3">
         <Layout1 />
       </div>
       <div
         class="col-11"
-        style="background-color: rgb(36, 45, 65); height: 78vh"
+        style="
+          background-color: rgb(36, 45, 65);
+          height: 78vh;
+          overflow-y: scroll;
+        "
       >
-        <UserProfile />
+        <TradePlans />
       </div>
       <div
         class="col-12"
@@ -34,13 +38,13 @@ import Footer from "../components/Footer/Footer.vue";
 import MarginTable from "../components/MarginTable/MarginTable.vue";
 import Layout1 from "../components/Body/Layout1.vue";
 import HeadMe from "./Header.vue";
-import UserProfile from "../components/UserProfile/UP-Layout1.vue";
+import TradePlans from "../components/TradingPlan/TP-Layout1.vue";
 export default defineComponent({
   name: "Body",
   components: {
     MarginTable,
     Footer,
-    UserProfile,
+    TradePlans,
     Layout1,
     HeadMe,
   },
@@ -48,6 +52,7 @@ export default defineComponent({
 </script>
 
 <style scoped>
+@import "../css/MobileResponsive.css";
 .headerBack {
   padding: 0;
   background-color: #191f2d;
@@ -58,11 +63,15 @@ export default defineComponent({
   background-color: #242d41;
 }
 
+.orderHead {
+  height: 11vh;
+}
 .row > .col-1,
 .row > .col-xs-1 {
   height: auto;
   width: 5.333%;
 }
+
 .row > .col-11,
 .row > .col-xs-11 {
   height: auto;

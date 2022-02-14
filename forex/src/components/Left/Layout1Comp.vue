@@ -31,7 +31,7 @@
       <q-btn to="/OrderBook" style="width: 100%; padding: 0 !important">
         <Layout1Icon icon="fa fa-comments" iconName="MARKET" class="iconsMy" />
       </q-btn>
-      <q-btn to="/OrderBook" style="width: 100%; padding: 0 !important">
+      <q-btn to="/TradingPlan" style="width: 100%; padding: 0 !important">
         <Layout1Icon
           icon="fa fa-cubes"
           iconName="TRADING"
