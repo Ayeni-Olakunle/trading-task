@@ -92,7 +92,7 @@ export default defineComponent({
   justify-content: center;
   align-items: center;
   font-weight: bold;
-  /* margin-right: 15px; */
+  /* margin-right: 25px; */
 }
 
 .IQoptionImg {
@@ -104,21 +104,21 @@ export default defineComponent({
   border-radius: 50px;
   height: 35px;
   margin-right: 10px;
-  margin-left: 20px;
-  margin-top: 8px;
+  /* margin-left: 20px; */
+  /* margin-top: 8px; */
 }
 
 .tradeList {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 10px;
+  /* margin-top: 10px; */
 }
 .holdHeaderOne {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 10px;
+  /* margin-top: 10px; */
 }
 
 .q-item {

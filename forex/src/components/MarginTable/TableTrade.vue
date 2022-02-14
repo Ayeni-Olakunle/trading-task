@@ -28,105 +28,127 @@
         title="Your Transaction History"
       />
     </div> -->
-    <table class="tableStyle">
-      <tr>
-        <th>
-          <i class="fa fa-cog fa-spin" style="margin-right: 10px"></i>Name
-        </th>
-        <th>Quantity</th>
-        <th>Margin</th>
-        <th>Open</th>
-        <th>Current Price</th>
-        <th>Take Profit</th>
-        <th>Stop Loss</th>
-        <th>Swap</th>
-        <th>Net/PL</th>
-        <th></th>
-      </tr>
-      <tr>
-        <td>
-          <span>
-            <i class="fa fa-bitcoin bestMe"></i>
-          </span>
-          Bitcoin
-        </td>
-        <td>
-          0.001
-          <i
-            class="fa fa-caret-down"
-            style="color: #cc2a2a; font-size: 13px"
-          ></i>
-        </td>
-        <td>0.41</td>
-        <td>345432.785</td>
-        <td>2334346</td>
-        <td><input type="text" placeholder="Add" class="add" /></td>
-        <td><input type="text" placeholder="Add" class="add" /></td>
-        <td>$0.02</td>
-        <td style="color: #cc2a2a; font-size: 13px">-$1.42</td>
-        <td><button class="closeTop">close</button></td>
-      </tr>
-      <tr>
-        <td><i class="fa fa-bitcoin bestMe"></i>Bitcoin</td>
-        <td>
-          0.001
-          <i class="fa fa-caret-up" style="color: #2acc2a; font-size: 13px"></i>
-        </td>
-        <td>0.41</td>
-        <td>345432.785</td>
-        <td>2334346</td>
-        <td><input type="text" placeholder="Add" class="add" /></td>
-        <td><input type="text" placeholder="Add" class="add" /></td>
-        <td>$0.02</td>
-        <td style="color: #2acc2a; font-size: 13px">-$1.42</td>
-        <td><button class="closeTop">close</button></td>
-      </tr>
-      <tr>
-        <td><i class="fa fa-bitcoin bestMe"></i>Bitcoin</td>
-        <td>
-          0.001
-          <i class="fa fa-caret-up" style="color: #2acc2a; font-size: 13px"></i>
-        </td>
-        <td>0.41</td>
-        <td>345432.785</td>
-        <td>2334346</td>
-        <td><input type="text" placeholder="Add" class="add" /></td>
-        <td><input type="text" placeholder="Add" class="add" /></td>
-        <td>$0.02</td>
-        <td style="color: #2acc2a; font-size: 13px">-$1.42</td>
-        <td><button class="closeTop">close</button></td>
-      </tr>
-      <tr>
-        <td><i class="fa fa-bitcoin bestMe"></i>Bitcoin</td>
-        <td>
-          0.001
-          <i class="fa fa-caret-up" style="color: #2acc2a; font-size: 13px"></i>
-        </td>
-        <td>0.41</td>
-        <td>345432.785</td>
-        <td>2334346</td>
-        <td><input type="text" placeholder="Add" class="add" /></td>
-        <td><input type="text" placeholder="Add" class="add" /></td>
-        <td>$0.02</td>
-        <td style="color: #2acc2a; font-size: 13px">-$1.42</td>
-        <td><button class="closeTop">close</button></td>
-      </tr>
-      <tr>
-        <td><i class="fa fa-bitcoin bestMe"></i>Bitcoin</td>
-        <td>
-          0.001
-          <i class="fa fa-caret-up" style="color: #2acc2a; font-size: 13px"></i>
-        </td>
-        <td>0.41</td>
-        <td>345432.785</td>
-        <td>2334346</td>
-        <td><input type="text" placeholder="Add" class="add" /></td>
-        <td><input type="text" placeholder="Add" class="add" /></td>
-        <td>$0.02</td>
-        <td style="color: #2acc2a; font-size: 13px">-$1.42</td>
-        <td><button class="closeTop">close</button></td>
-      </tr>
-    </table>
+    <div class="tableStyle">
+      <table style="width: 100%">
+        <tr>
+          <th>
+            <i class="fa fa-cog fa-spin" style="margin-right: 10px"></i>Name
+          </th>
+          <th>Quantity</th>
+          <th>Margin</th>
+          <th>Open</th>
+          <th>Current Price</th>
+          <th>Take Profit</th>
+          <th>Stop Loss</th>
+          <th>Swap</th>
+          <th>Net/PL</th>
+          <th></th>
+        </tr>
+        <tr>
+          <td style="display: flex">
+            <span>
+              <i class="fa fa-bitcoin bestMe"></i>
+            </span>
+            Bitcoin
+          </td>
+          <td>
+            0.001
+            <i
+              class="fa fa-caret-down"
+              style="color: #cc2a2a; font-size: 13px"
+            ></i>
+          </td>
+          <td>0.41</td>
+          <td>345432.785</td>
+          <td>2334346</td>
+          <td><input type="text" placeholder="Add" class="add" /></td>
+          <td><input type="text" placeholder="Add" class="add" /></td>
+          <td>$0.02</td>
+          <td style="color: #cc2a2a; font-size: 13px">-$1.42</td>
+          <td><button class="closeTop">close</button></td>
+        </tr>
+        <tr>
+          <td style="display: flex">
+            <i class="fa fa-bitcoin bestMe"></i>Bitcoin
+          </td>
+          <td>
+            0.001
+            <i
+              class="fa fa-caret-up"
+              style="color: #2acc2a; font-size: 13px"
+            ></i>
+          </td>
+          <td>0.41</td>
+          <td>345432.785</td>
+          <td>2334346</td>
+          <td><input type="text" placeholder="Add" class="add" /></td>
+          <td><input type="text" placeholder="Add" class="add" /></td>
+          <td>$0.02</td>
+          <td style="color: #2acc2a; font-size: 13px">-$1.42</td>
+          <td><button class="closeTop">close</button></td>
+        </tr>
+        <tr>
+          <td style="display: flex">
+            <i class="fa fa-bitcoin bestMe"></i>Bitcoin
+          </td>
+          <td>
+            0.001
+            <i
+              class="fa fa-caret-up"
+              style="color: #2acc2a; font-size: 13px"
+            ></i>
+          </td>
+          <td>0.41</td>
+          <td>345432.785</td>
+          <td>2334346</td>
+          <td><input type="text" placeholder="Add" class="add" /></td>
+          <td><input type="text" placeholder="Add" class="add" /></td>
+          <td>$0.02</td>
+          <td style="color: #2acc2a; font-size: 13px">-$1.42</td>
+          <td><button class="closeTop">close</button></td>
+        </tr>
+        <tr>
+          <td style="display: flex">
+            <i class="fa fa-bitcoin bestMe"></i>Bitcoin
+          </td>
+          <td>
+            0.001
+            <i
+              class="fa fa-caret-up"
+              style="color: #2acc2a; font-size: 13px"
+            ></i>
+          </td>
+          <td>0.41</td>
+          <td>345432.785</td>
+          <td>2334346</td>
+          <td><input type="text" placeholder="Add" class="add" /></td>
+          <td><input type="text" placeholder="Add" class="add" /></td>
+          <td>$0.02</td>
+          <td style="color: #2acc2a; font-size: 13px">-$1.42</td>
+          <td><button class="closeTop">close</button></td>
+        </tr>
+        <tr>
+          <td style="display: flex">
+            <i class="fa fa-bitcoin bestMe"></i>Bitcoin
+          </td>
+          <td>
+            0.001
+            <i
+              class="fa fa-caret-up"
+              style="color: #2acc2a; font-size: 13px"
+            ></i>
+          </td>
+          <td>0.41</td>
+          <td>345432.785</td>
+          <td>2334346</td>
+          <td><input type="text" placeholder="Add" class="add" /></td>
+          <td><input type="text" placeholder="Add" class="add" /></td>
+          <td>$0.02</td>
+          <td style="color: #2acc2a; font-size: 13px">-$1.42</td>
+          <td><button class="closeTop">close</button></td>
+        </tr>
+      </table>
+    </div>
   </div>
 </template>
 
@@ -226,8 +248,8 @@ export default defineComponent({
   font-size: 12px;
   text-align: center;
   position: absolute;
-  bottom: 13%;
-  padding-bottom: 20px;
+  bottom: 12%;
+  padding-bottom: 15px;
 }
 
 .add {

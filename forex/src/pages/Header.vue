@@ -36,11 +36,15 @@ export default defineComponent({
 
 .headerQ {
   padding: 20px;
+  width: 100%;
 }
 
 .highOne {
   padding: 5px 0px;
   border-bottom: 1px solid rgb(82, 82, 82);
-  height: 11.9vh;
+  height: 9vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 </style>

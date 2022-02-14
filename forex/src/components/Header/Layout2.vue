@@ -555,9 +555,9 @@ export default defineComponent({
   font-size: 11px;
 }
 .LayTwo {
-  padding: 5px 16px;
+  padding: 0px 0px;
   align-items: center;
-  margin-top: 13px;
+  /* margin-top: 13px; */
   /* display: block; */
 }
 .LayTwo2 {

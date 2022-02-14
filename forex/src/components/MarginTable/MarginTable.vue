@@ -177,7 +177,7 @@ export default defineComponent({
   color: white;
   border: none;
   padding: 3px 10px;
-  margin: 4px 10px;
+  margin: 1px 10px;
   cursor: pointer;
 }
 

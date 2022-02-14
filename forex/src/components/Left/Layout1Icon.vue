@@ -6,7 +6,7 @@
     color="primary"
   >
     <i class="fa fa-plus plum"></i>
-    <div style="line-height: 0.5">
+    <div style="line-height: 0.9">
       <q-icon :name="icon" class="iconStyle" /><br />
       <span class="icontext">{{ iconName }}</span
       ><br />

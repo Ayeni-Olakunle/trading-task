@@ -1,45 +1,43 @@
 <template>
-  <div>
+  <div style="display: flex; justify-content: space-between; width: 100%">
     <div class="amount">
       <div style="display: flex; justify-content: space-between">
         <p style="margin: 0">Amount</p>
-        <i class="fa fa-question-circle"></i>
+        <i class="fa fa-question-circle" style="margin-top: 3px"></i>
       </div>
       <p id="amont" style="margin: 0">${{ counts }}</p>
     </div>
     <div class="holdPlus">
-      <div class="plus" @click="decreseCounter">-</div>
       <div class="plus" @click="incrementCounter">+</div>
-    </div>
-  </div>
-
-  <div>
-    <div
-      class="amount"
-      style="background-color: #363d50; border: 1.5px solid #363d50"
-    >
-      <div style="display: flex; justify-content: space-between">
-        <p style="margin: 0">Multiplier</p>
-        <i class="fa fa-question-circle"></i>
+      <div class="plus" @click="decreseCounter" style="margin-bottom: 2px">
+        -
       </div>
-      <p id="amont" style="margin: 0">X 20</p>
-    </div>
-    <div class="holdPlus">
-      <div class="plus" @click="decreseCounter">-</div>
-      <div class="plus" @click="incrementCounter">+</div>
     </div>
   </div>
 
   <div class="holdAmont" style="text-align: left">
     <div class="holdProfit">
       <p style="font-size: 12px; margin: 0; color: #7c7f87">
-        Volume <i class="fa fa-question-circle"></i>
+        Point value <i class="fa fa-question-circle"></i>
       </p>
-      <p style="font-size: 15px; margin-bottom: 5px; color: #c8c8c8">$2k</p>
+      <p style="font-size: 12px; margin-bottom: 5px; color: #c8c8c8">
+        <i class="fas fa-less-than" style="font-size: 10px"></i>$0.01
+      </p>
       <p style="font-size: 12px; margin: 0; color: #7c7f87">
-        Piont Value <i class="fa fa-question-circle"></i>
+        Margin <i class="fa fa-question-circle"></i>
       </p>
-      <p style="font-size: 15px; margin: 0; color: #c8c8c8">5.01k</p>
+      <p style="font-size: 12px; margin: 0; color: #c8c8c8">$8.41</p>
+      <div
+        style="
+          display: flex;
+          justify-content: space-between;
+          width: 100%;
+          margin-top: 10px;
+        "
+      >
+        <span style="font-size: 12px; color: #c8c8c8">Leverage</span>
+        <span style="font-size: 12px">1:5</span>
+      </div>
     </div>
   </div>
 
@@ -52,13 +50,64 @@
       </p>
     </div>
   </div> -->
-
-  <div>
+  <div
+    style="
+      margin: 0;
+      display: flex;
+      justify-content: space-between;
+      width: 100%;
+    "
+  >
+    <div class="amount">
+      <div style="display: flex; justify-content: space-between">
+        <p style="margin: 0">TP</p>
+        <i class="fa fa-question-circle" style="margin-top: 3px"></i>
+      </div>
+      <p id="amont" style="margin: 0">-</p>
+    </div>
+    <div class="holdPlus">
+      <div class="plus" @click="incrementCounter">+</div>
+      <div class="plus" @click="decreseCounter" style="margin-bottom: 2px">
+        -
+      </div>
+    </div>
+  </div>
+  <div style="display: flex; justify-content: space-between; width: 100%">
+    <div class="amount">
+      <div style="display: flex; justify-content: space-between">
+        <p style="margin: 0">SL</p>
+        <i class="fa fa-question-circle" style="margin-top: 3px"></i>
+      </div>
+      <p id="amont" style="margin: 0">-</p>
+    </div>
+    <div class="holdPlus">
+      <div class="plus" @click="incrementCounter">+</div>
+      <div class="plus" @click="decreseCounter" style="margin-bottom: 2px">
+        -
+      </div>
+    </div>
+  </div>
+  <div style="display: flex; justify-content: space-between; width: 100%">
+    <div class="amount">
+      <div style="display: flex; justify-content: space-between">
+        <p style="margin: 0">Prince</p>
+        <i class="fa fa-question-circle" style="margin-top: 3px"></i>
+      </div>
+      <p id="amont" style="margin: 0">Market</p>
+    </div>
+    <div class="holdPlus">
+      <div class="plus" @click="incrementCounter">+</div>
+      <div class="plus" @click="decreseCounter" style="margin-bottom: 2px">
+        -
+      </div>
+    </div>
+  </div>
+  <!-- <div>
     <div class="amount" style="margin-bottom: 5px">
       <p style="margin: 0">Auto Complete</p>
       <p id="amont" style="margin: 0">-</p>
     </div>
-  </div>
+  </div> -->
 
   <div class="holdAmont">
     <div class="amountBuy" @click="alert = true">
@@ -90,6 +139,11 @@
     </q-card>
   </q-dialog>
 
+  <div style="display: flex; justify-content: space-between">
+    <p style="margin: 0">Spread</p>
+    <p style="margin: 0">0.007</p>
+  </div>
+
   <div class="holdAmont">
     <div class="amountSell" @click="alert = true" label="Alert" color="primary">
       <!-- <img
@@ -103,16 +157,11 @@
     </div>
   </div>
 
-  <!-- <div style="display: flex; justify-content: space-between; padding: 5px">
-    <p style="margin: 0">Spread</p>
-    <p style="margin: 0">0.007</p>
-  </div> -->
-
   <!-- <button style="background-color: #363d50; border: none; color: white">
     Purchase at...
-  </button> -->
+  </button>
 
-  <!-- <div class="holdAmont">
+  <div class="holdAmont">
     <p style="margin: 0">AutoCopy <br />Trader</p>
   </div>
   <div class="q-pa-md" style="text-align: center; padding: 0">
@@ -159,7 +208,7 @@ export default defineComponent({
 .amount {
   background-color: #363d50;
   width: 100%;
-  padding: 0 10px;
+  padding: 0 4px;
   font-size: 12px;
   border-radius: 2px;
   margin-bottom: 3px;
@@ -193,33 +242,34 @@ export default defineComponent({
 }
 
 .plus {
-  width: 49%;
   background-color: #363d50;
   display: flex;
   justify-content: center;
   align-items: center;
   cursor: pointer;
   border-radius: 2px;
+  margin-bottom: 2px;
 }
 
 .holdPlus {
   display: flex;
   justify-content: space-between;
-  width: 100%;
-  margin-bottom: 4px;
+  flex-direction: column;
+  width: 30%;
+  margin-left: 2px;
 }
 .holdAmont {
   text-align: center;
   display: flex;
   justify-content: center;
   font-size: 15px;
-  margin-bottom: 5px;
+  /* margin-bottom: 5px; */
   /* padding: 0 5px; */
 }
 
 .holdProfit {
   width: 100%;
   line-height: 1.3;
-  margin: 10px 0;
+  margin: 3px 0;
 }
 </style>

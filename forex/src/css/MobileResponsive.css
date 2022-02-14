@@ -100,7 +100,7 @@
   }
 
   .tableStyle {
-    bottom: 18% !important;
+    bottom: 11% !important;
   }
 
   .margin {
@@ -110,6 +110,15 @@
   .thug {
     background-color: #191f2d !important;
     padding: 3px 10px !important;
+  }
+  .row > .col-1[data-v-45efd174],
+  .row > .col-xs-1[data-v-45efd174] {
+    height: auto;
+    width: 8.333% !important;
+  }
+  .tableStyle {
+    padding-bottom: 20px !important;
+    overflow-x: scroll !important;
   }
 }
 
@@ -137,5 +146,14 @@
   }
   .headHigh {
     height: auto !important;
+  }
+  .row > .col-1[data-v-45efd174],
+  .row > .col-xs-1[data-v-45efd174] {
+    height: auto;
+    width: 8.333% !important;
+  }
+  .tableStyle {
+    padding-bottom: 20px !important;
+    overflow-x: scroll !important;
   }
 }
