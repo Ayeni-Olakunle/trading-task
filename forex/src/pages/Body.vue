@@ -5,7 +5,7 @@
         <HeadMe />
       </div>
     </div>
-    <div class="row middleHigh2" style="justify-content: space-between">
+    <div class="row" style="justify-content: space-between">
       <div class="col-1 kolo3">
         <Layout1 />
       </div>

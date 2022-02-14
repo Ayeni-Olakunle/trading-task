@@ -7,7 +7,7 @@
       </div>
       <div
         class="col-11"
-        style="background-color: rgb(36, 45, 65); height: 75vh"
+        style="background-color: rgb(36, 45, 65); height: 78vh"
       >
         <UserProfile />
       </div>
@@ -56,5 +56,11 @@ export default defineComponent({
 .kolo3 {
   color: white;
   background-color: #242d41;
+}
+
+.row > .col-1,
+.row > .col-xs-1 {
+  height: auto;
+  width: 5.333%;
 }
 </style>
