@@ -92,7 +92,7 @@
           <div class="holdMoney">
             <div class="moneySelf">$10000</div>
           </div>
-          <p><q-icon :name="mark" /> <span> Leverage 1:20</span></p>
+          <p><q-icon :name="mark" /> <span> Leverage 1:200</span></p>
           <p><q-icon :name="mark" /> <span> Margin Loans Up to 25%</span></p>
           <p><q-icon :name="mark" /> <span> Withdrawal Fee 25EUR +1%</span></p>
           <p><q-icon :name="mark" /> <span> Risk Free Trade 3</span></p>
