@@ -1,7 +1,7 @@
 <template>
   <div class="holdAll2">
     <div class="row">
-      <div class="col-12 headHigh">
+      <div class="col-12 headHig">
         <HeadMe />
       </div>
     </div>
