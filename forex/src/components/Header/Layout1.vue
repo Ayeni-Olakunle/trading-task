@@ -7,8 +7,98 @@
         <HeaderButin title="EUR/GBP" active="true" />
         <HeaderButin title="EUR/JPY" active="false" />
         <HeaderButin title="GBP/USD" active="false" />
-        <div class="adding">
+        <div class="adding" @click="AddPlu">
           <span>+</span>
+        </div>
+      </div>
+      <div :class="addMe ? ' dis' : ' disNO'">
+        <div class="Adding">
+          <div class="sideDiv">
+            <div class="holdList">
+              <div>
+                <q-icon :name="IconName" size="13px" class="iconPP" />
+              </div>
+              <div class="stageTwo">
+                <span class="wordAdd">Watchlist</span>
+                <span class="numList">0</span>
+              </div>
+            </div>
+            <div class="holdList">
+              <div>
+                <q-icon name="fa fa-bolt" size="13px" class="iconPP" />
+              </div>
+              <div class="stageTwo">
+                <span class="wordAdd">Option</span>
+                <span class="numList">31</span>
+              </div>
+            </div>
+            <div class="holdList">
+              <div>
+                <q-icon name="fa fa-dollar" size="13px" class="iconPP" />
+              </div>
+              <div class="stageTwo">
+                <span class="wordAdd">Forex</span>
+                <span class="numList">35</span>
+              </div>
+            </div>
+            <div class="holdList">
+              <div>
+                <q-icon name="fa fa-home" size="13px" class="iconPP" />
+              </div>
+              <div class="stageTwo">
+                <span class="wordAdd">Stock</span>
+                <span class="numList">194</span>
+              </div>
+            </div>
+            <div class="holdList">
+              <div>
+                <q-icon name="fa fa-bitcoin" size="13px" class="iconPP" />
+              </div>
+              <div class="stageTwo">
+                <span class="wordAdd">Crpto</span>
+                <span class="numList">19</span>
+              </div>
+            </div>
+            <div class="holdList">
+              <div>
+                <q-icon name="fas fa-water" size="13px" class="iconPP" />
+              </div>
+              <div class="stageTwo">
+                <span class="wordAdd">Commodities</span>
+                <span class="numList">3</span>
+              </div>
+            </div>
+            <div class="holdList">
+              <div>
+                <q-icon name="fa fa-cube" size="13px" class="iconPP" />
+              </div>
+              <div class="stageTwo">
+                <span class="wordAdd">ETFs</span>
+                <span class="numList">22</span>
+              </div>
+            </div>
+          </div>
+          <div class="layTwo">
+            <div style="border: 1px solid #4e677e8f; padding: 1px 10px">
+              <q-icon
+                name="fa fa-search"
+                size="13px"
+                style="font-size: 13px; color: gray"
+              />
+              <input
+                type="text"
+                style="
+                  background-color: transparent;
+                  border: none;
+                  color: gray;
+                  margin-left: 15px;
+                  font-size: 13px;
+                  width: 90%;
+                "
+                placeholder="Search by name or ticker"
+              />
+            </div>
+          </div>
         </div>
       </div>
       <div class="q-pa-md small" style="margin-top: 10px">
@@ -59,6 +149,7 @@ export default defineComponent({
   name: "Layout1",
   setup() {
     return {
+      IconName: "fa fa-star",
       onItemClick() {
         // console.log('Clicked on an Item')
       },
@@ -66,6 +157,16 @@ export default defineComponent({
   },
   components: {
     HeaderButin,
+  },
+  data() {
+    return {
+      addMe: false,
+    };
+  },
+  methods: {
+    AddPlu() {
+      this.addMe = !this.addMe;
+    },
   },
 });
 </script>
@@ -149,5 +250,77 @@ export default defineComponent({
   box-shadow: none;
   background: #242d41;
   border-bottom: 1px solid #151a25;
+}
+
+.Adding {
+  position: absolute;
+  top: 12%;
+  width: 61%;
+  left: 15%;
+  display: flex !important;
+  height: 100%;
+  background-color: antiquewhite;
+  display: none;
+}
+
+.sideDiv {
+  background-color: #191f2d;
+  width: 30%;
+  color: white;
+  padding: 20px 5px;
+}
+
+.iconPP {
+  background-color: #4e677e;
+  border-radius: 50px;
+  margin-right: 15px;
+  width: 20px;
+  height: 20px;
+  color: #191f2d;
+}
+
+.holdList {
+  display: flex;
+  padding: 10px 10px 0px 10px;
+  /* background-color: #3a455d; */
+  border-radius: 3px;
+}
+.holdList:hover {
+  background-color: #3a455d;
+  cursor: pointer;
+}
+
+.stageTwo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  border-bottom: 1px solid #3a455d;
+  padding-bottom: 10px;
+}
+
+.numList {
+  background-color: #4e677e;
+  border-radius: 50px;
+  font-size: 12px;
+  padding: 0px 5px;
+}
+
+.wordAdd {
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.layTwo {
+  width: 100%;
+  background-color: #191f2d;
+  color: white;
+  padding: 20px;
+}
+.dis {
+  display: block;
+}
+.disNO {
+  display: none;
 }
 </style>

@@ -120,6 +120,11 @@
     padding-bottom: 20px !important;
     overflow-x: scroll !important;
   }
+  .barANDsel {
+    padding: 10px !important;
+    background-color: rgb(25, 31, 45);
+    height: auto;
+  }
 }
 
 @media only screen and (max-width: 880px) {

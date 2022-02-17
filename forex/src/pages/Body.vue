@@ -53,6 +53,7 @@
       </div>
       <div class="col-11 middleHigh">
         <Layout2 />
+        <q-btn label="Trade" class="tradingME" @click="alert = true" />
       </div>
       <!-- <div
         class="col-1 kolo3"
@@ -61,6 +62,26 @@
         <Layout3 />
       </div> -->
     </div>
+    <div>
+      <q-dialog v-model="alert">
+        <q-card style="width: 90%">
+          <q-card-section>
+            <div class="text-h6">Trade Now</div>
+          </q-card-section>
+
+          <q-card-section class="q-pt-none">
+            <div class="col-1 kolo3 barANDsel">
+              <Layout3 />
+            </div>
+          </q-card-section>
+
+          <q-card-actions align="right">
+            <q-btn flat label="OK" color="primary" v-close-popup />
+          </q-card-actions>
+        </q-card>
+      </q-dialog>
+    </div>
+
     <div
       class="col-12"
       style="background-color: rgb(36, 45, 65); height: 13 vh"
@@ -74,6 +95,7 @@
 </template>
 
 <script>
+import { ref } from "vue";
 import { defineComponent } from "vue";
 import Footer from "../components/Footer/Footer.vue";
 import MarginTable from "../components/MarginTable/MarginTable.vue";
@@ -83,6 +105,11 @@ import Layout1 from "../components/Body/Layout1.vue";
 import HeadMe from "pages/Header.vue";
 export default defineComponent({
   name: "Body",
+  setup() {
+    return {
+      alert: ref(false),
+    };
+  },
   components: {
     MarginTable,
     Footer,
@@ -139,5 +166,18 @@ export default defineComponent({
 .row > .col-xs-1 {
   height: auto;
   width: 5.333%;
+}
+
+.barANDsel {
+  padding: 0px 5px;
+  background-color: rgb(25, 31, 45);
+}
+
+.tradingME {
+  position: absolute;
+  bottom: 5%;
+  right: 2%;
+  background-color: #191f2d !important;
+  color: white;
 }
 </style>
